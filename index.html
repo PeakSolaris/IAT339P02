@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+      <nav>        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="productlist.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+
+      <div class="topbanner"> 
+        <div class="logo"><a class="active" href="#about">EVERELECTION</a></div>
+        <ul>    
+          <li><a href="product_listing.html">Baby</a></li>
+          <li><a href="#combined_elements">Kids</a></li>
+          <li><a href="#text_elements" >Man</a></li>
+          <li><a href="#interactive_elements" >Woman</a></li>
+        </ul>
+    </div>
+
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <h4>CSS selector:</h4>
+        <p>.in-text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;Click here to visit our website!&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a href="#" class ="in-text-link">Click here to visit our website!</a>
+
+      </section>
+
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;input type="submit" value="Submit"&gt;</code>
+        <code>&lt;input type="reset" value="reset"&gt;</code>
+        <h4>Rendered element:</h4>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </section>
+
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;label for="fname">First name:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
+        <h4>Rendered element:</h4>
+        <form>
+          <fieldset class="personal-info">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+        </fieldset>
+        </form>
+      </section>
+
+<!-- knowledge here is from w3cschool website -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;input type="radio" id="small" name="cloth_size" value="SMALL"&gt;</code>
+        <code>&lt;label for="small">SMALL&lt;/label&gt;</code>
+        
+        <h4>Rendered element:</h4>
+<form >
+  <input type="radio" id="small" name="cloth_size" value="SMALL">
+  <label for="small">SMALL</label><br>
+  <input type="radio" id="medium" name="cloth_size" value="MEDIUM">
+  <label for="medium">MEDIUM</label><br>
+  <input type="radio" id="large" name="cloth_size" value="LARGE">
+  <label for="large">LARGE</label><br><br>
+</form>
+      </section>
+ <!-- knowledge here is from w3cschool website -->
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <h4>CSS selector:</h4>
+        <p>.image-as-a-link</p>
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#"&gt;&lt;img src="#" alt="exmaple"&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>The image below is a link. Try to click on it.</p>
+
+        <a href="#" class="image-as-a-link"><img class="imgshow" src="imgs/img1.png" alt="Uniqlo example"></a>
+      </section>
+<!-- image here is from uniqlo.com/ca website -->
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
+        <h4>Rendered element:</h4>
+        <h3>Headings</h3>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        <h4>Rendered element:</h4>
+        <p>This is a paragraph.</p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;li&gt;small&lt;/li&gt;</code>
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>small</li>
+          <li>medium</li>
+          <li>large</li>
+        </ol>  
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Basic layout showing</h3>
+        <h3>Main Navigation</h3>
+        <h4>Rendered element:</h4>
+        <nav>    
+          <a class="button-nav" href="#">Baby</a>
+          <a class="button-nav" href="#">Kids</a>
+          <a class="button-nav" href="#">Man</a>
+          <a class="button-nav" href="#">Woman</a>
+          </nav>
+        
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;div class="prodctimg"&gt;&lt;img src="img1.png" alt="img1"&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="prodctname"&gt;&lt;p&gt;Golden T-shirt&lt;/p&gt;&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+        <div class="card_desing_prduct">
+          <div class="itemCard">
+              <a class="in-text-link" href="#">
+                  <div class="crd_img">
+                      <img class="itemimg" src="imgs/img1.png" alt="">
+                  </div>
+                  <div class="crd_hdng">
+                      <h5>Man's wear</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="itemCard">
+              <a class="in-text-link" href="#">
+                  <div class="crd_img">
+                      <img class="itemimg" src="imgs/img3.png" alt="">
+                  </div>
+                  <div class="crd_hdng">
+                      <h5>Woman's wear</h5>
+                  </div>
+              </a>
+          </div>
+          <div class="itemCard">
+            <a class="in-text-link" href="#">
+                <div class="crd_img">
+                    <img class="itemimg" src="imgs/img2.png" alt="">
+                </div>
+                <div class="crd_hdng">
+                    <h5>Kid's wear</h5>
+                </div>
+            </a>
+        </div>
+      </div>
+
+      </section>
+      <br>
+      <br>
+      <br>
+      <section class="element">
+        <br>
+        <br><br><br>
+        <br>
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;label for="cname"&gt;Name on Card&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="email" name="email"&gt;</code>
+        <h4>Rendered element:</h4>
+        <div class="paymentform">
+          <div class="billingaddress">
+          <div class="paymenttitle">Billing Address</div>
+          <div class="paymentinfo"> Full Name</div>
+          <input type="text" class="paymentinfoinput" id="frname" name="fullname" placeholder="Jean Doe">
+          <div class="paymentinfo"> Email</div>
+          <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
+          <div class="paymentinfo"> Address</div>
+          <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
+          <div class="paymentinfo"> City</div>
+          <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
+        </div>
+        <div class="payment">
+          <div class="paymenttitle">Payment</div>
+          <div class="paymentinfo">Name on Card</div>
+          <input type="text" class="paymentinfoinput" id="cname" name="cardname">
+          <div class="paymentinfo">Credit card number</div>
+          <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+          <div class="paymentinfo">Exp Date</div>
+          <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
+          <div class="paymentinfo">CVV</div>
+          <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
+        </div>
+        </div>
+      </section>
+      
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <h4>CSS selector:</h4>
+        <p></p>
+        <h4>Sample code:</h4>
+        <code>&lt;div class="cartprodctName"&gt;Golden T-shirt&lt;/div&gt;</code>
+        <code>&lt;div class="cartprodctPrice"&gt;$20&lt;/div&gt;</code>
+        <h4>Rendered element:</h4>
+        <div class="shoppingCart">
+          <div class="cartimg"><img src="imgs/img1.png" alt="prodctimg"></div>
+          <div class="bag-total">
+            <div class="subtotal">
+              <p class="small">Subtotal:</p>
+              <p class="small">$79.00</p>
+            </div>
+            <div class="delivery">
+              <p class="small">Delivery (Standard - 2 working days):<br>
+                <a href="#" class="change-delivery">Change delivery method</a>
+              </p>
+              <p class="delivery-price">Free</p>
+            </div>
+            <div class="total">
+              <h3>Total:</h3>
+              <h3>$79.00</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="brandingIdeas">
+      <h2>Basic branding ideas</h2>
+          <p>Our main business is the sale of clothing, and we sell clothes for all genders and all ages, so that even babies can shop for their own clothing.
+          Human beings of all ages who need to buy clothes.
+          Because we offer a wide variety of types of clothes, our customers can pick and choose at will because of our comprehensiveness and low prices.
+          Font selection: Helvetica and Times new roman
+          Color platte & moodboard please visit <a href="https://www.figma.com/file/cOELGWmbE3Ip7AzzP53XY9/IAT339-Moodboard?node-id=1%3A2&t=i2o2AqvUbTrpHkjV-1">here</a>.
+          </p>
+
+          <div class="colorscheme"><p>
+            color plattes:
+            </p>
+            <div class="colorplate1"> color scheme1</div>
+            <div class="colorplate2"> color scheme1</div>
+            <div class="colorplate3"> color scheme1</div>
+            <div class="colorplate4"> color scheme1</div>
+            <p>Fonts: Helvetica</p>
+          </div>
+         
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <p>
+        Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
+        Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.
+
+        knowledge of creating payform css and the style of productlist is Retrieved from <a href="https://www.w3schools.com/html/">w3cschool</a>.
+      </p>
+
+    </section>
+
+
+
+  </body>
+</html>

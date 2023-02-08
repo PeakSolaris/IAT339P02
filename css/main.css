@@ -1,0 +1,420 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/*Change the default font.*/
+
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+.element {
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+}
+
+/*Add space between <section> elements.*/
+
+section {
+  margin: 4rem 0;
+  
+}
+
+h1 {
+  padding: 4rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 6rem;
+  font-size: 3em;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+/*Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks.*/
+
+p {
+  width: 1000px;
+  margin-top: 0;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+.element a{
+  text-decoration: none;
+  color: white;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/*Add a different hover and focus state styling to the in-text link.*/
+.in-text-link{
+  background-color: #333;
+}
+.in-text-link:hover{
+  color:rgb(178, 216, 216);
+  text-decoration: underline;
+
+}
+
+.in-text-link:focus{
+  color:rgb(178, 216, 216);
+  border: 1px solid black;
+}
+
+/*Add a different hover and focus state styling to the image as a link.*/
+
+.imgshow {
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  left: 0;
+  right: 0;
+}
+
+
+.image-as-a-link:hover{
+  border:1px solid aqua;
+}
+.image-as-a-link:focus{
+  background-color: coral;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: rgb(50,50,50);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 15px;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(200,200,200);
+  font-weight: bold;
+}
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+form {
+  border-radius: 10px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 300px;
+}
+
+/*Style the <input> and <label>*/
+
+input {
+  border-radius: 15px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif；
+}
+
+.personal-info {
+  padding: 20px 20px 0 20px;
+}
+
+.personal-info label {
+  color: #395870;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* these resources are from Shay Howe website of building form*/
+
+.topbanner {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+}
+
+.topbanner .logo{
+  display: flex;
+  flex: 1;
+  
+  align-items: center;
+  margin-left: 2em;
+  text-align: center;
+}
+
+.topbanner .logo a{
+  text-decoration: none;
+  color: #e7e7e7;
+  font-weight: bold;
+  
+  
+}
+
+.topbanner ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+@media screen and (max-width:850px){
+  .topbanner{
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .topbanner .logo{
+    margin-left: 0;
+    text-align: center;
+
+    align-self: center;
+    
+  }
+
+
+  .topbanner ul{
+    flex-direction: column;
+  }
+  
+}
+.card_desing_prduct{
+  display: flex;
+  justify-content:center
+}
+.itemimg {width: 100%;}
+.iteminfo { text-decoration: none; }
+
+
+.itemCard {
+  background-color: #333;
+  width: 300px;
+  border:1px solid #c2986b;
+  margin: 0 30px 40px 0;
+  transition: all 0.5s ease-in-out 0s;
+  flex: 1;
+}
+
+.crd_img {
+  width: 100%;
+  overflow: hidden;
+  margin: -10px 0 0 -10px;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.crd_img img {
+  height: 100%;
+  transform: scale(1.0);
+  transition: all 0.9s ease-in-out 0s;
+}
+
+.itemCard h5 {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.itemCard:hover .crd_img { 
+   margin: 0;
+}
+
+.itemCard:hover { 
+  background-color: #c2986b; border-width: 3px;
+}
+
+@media screen and (max-width:850px){
+  .card_desing_prduct{
+    flex-direction: column;
+  }
+  
+}
+
+.paymentform{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  max-width: 60rem;
+  
+}
+
+.billingaddress,.payment{
+  background-color: #e7e7e7;
+  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
+  flex: 1;
+}
+
+.paymenttitle{
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 2rem 4rem 2rem 0rem;
+  color: black;
+}
+input[type=text]{
+  margin-top:0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+}
+
+input[type=number]{
+  margin-top:0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+}
+
+@media screen and (max-width:850px){
+  .paymentform{
+    flex-direction: column;
+  }
+  
+}
+
+
+
+
+.shoppingCart{
+  display: flex;
+  
+}
+
+.cartimg,.bag-total{
+  background-color: #e7e7e7;
+  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
+  /*flex: 1;*/
+}
+.itemtitle p{
+  margin-top: 3rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.subtotal p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtotal{
+  margin-top: 5rem;
+}
+
+.delivery{
+  border-bottom:  1px solid #333;
+  width: 70%;
+}
+.total{
+  margin-top: 6rem;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.delivery-price{
+  color: green;
+}
+
+.change-delivery{
+  color: black;
+}
+
+.change-delivery:hover{
+  color:purple;
+}
+
+@media screen and (max-width:850px){
+  .shoppingCart{
+    flex-direction: column;
+  }
+  
+}
+
+.footer{
+  background-color: #333;
+}
+
+.footer.foottitle a{
+  font-weight: bold;
+  color: #333;
+}
+
+.colorscheme p{
+  font-weight: bold;
+}
+
+.colorscheme .colorplate1{
+  color: #EEE;
+  background-color: #333;
+}
+
+.colorscheme .colorplate2{
+  background-color: #e7e7e7;
+
+}
+.colorscheme .colorplate3{
+background-color:#c2986b;
+}
+
+.colorscheme .colorplate4{
+  background-color:purple;
+  }
