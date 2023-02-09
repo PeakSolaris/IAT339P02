@@ -24,9 +24,11 @@ section {
 }
 
 h1 {
+  font-family: "Lato-Light",sans-serif;
   padding: 4rem;
   text-align: center;
   font-weight: 60;
+  font-size:2rem;
 }
 
 h2 {
@@ -46,8 +48,10 @@ h4 {
 /*Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks.*/
 
 p {
+  font-family: "Poppins",sans-serif;
   width: 1000px;
   margin-top: 0;
+  font-weight: 60;
 }
 
 nav a:hover, nav a:focus {
@@ -79,17 +83,26 @@ code {
 
 /*Add a different hover and focus state styling to the in-text link.*/
 .in-text-link{
-  background-color: #333;
+  color: black;
 }
 .in-text-link:hover{
-  color:#d9edd6;
+  color:#84a37e;
   text-decoration: underline;
 
 }
 
 .in-text-link:focus{
-  color:#d9edd6;
+  color:#df2c4d;
   border: 1px solid black;
+}
+
+.itemCard .in-text-link{
+  color:white;
+}
+
+.itemCard .in-text-link:hover{
+    color:#d9edd6;
+    border: 1px solid black;
 }
 
 /*Add a different hover and focus state styling to the image as a link.*/
@@ -104,11 +117,17 @@ code {
 }
 
 
-.image-as-a-link:hover{
-  border:1px solid aqua;
+.linked-img:hover{
+  max-height: 100%; 
+  max-width: 100%;
+  border-width: 3px;
+	border-style: solid;
+	border-color: #84a37e;
 }
-.image-as-a-link:focus{
-  background-color: coral;
+.linked-img:focus{
+  opacity:.5;
+  outline: none;
+  border:3px solid #df2c4d;
 }
 
 /* Styling for the navigation button */
@@ -153,8 +172,18 @@ input {
   border-radius: 15px;
   font: 14px/1.4 "Poppins",sans-serif;
   font-weight: 60;
-
 }
+
+input:hover{
+  border:2px solid #84a37e;
+  cursor:pointer;
+}
+
+input:focus{
+  outline: none;
+  border:2px solid #df2c4d;
+}
+
 
 .personal-info {
   padding: 20px 20px 0 20px;
@@ -193,7 +222,7 @@ input {
 .topbanner .logo a{
   text-decoration: none;
   color: #f7f7f2;
-  font: "Lato",sans-serif;
+  font-family: "Lato",sans-serif;
   font-weight: bold;
 }
 
@@ -316,7 +345,7 @@ li a:hover:not(.active) {
 }
 
 .paymenttitle{
-  font: "Poppins",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   padding: 2rem 4rem 2rem 0rem;
@@ -337,6 +366,18 @@ input[type=number]{
   border-radius: 5px;
   width: 90%;
 }
+
+.paymentform input:hover{
+  border-color: #84a37e;
+  border-width: 2px;
+}
+
+.paymentform input:focus{
+  border-color: rgb(45, 91, 216);
+  border-width: 2px;
+}
+
+
 
 @media screen and (max-width:850px){
   .paymentform{
