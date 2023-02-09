@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P01 - Style Guide Template</title>
+    <title>Cocomolo - Checkout Cart</title>
 
     <link href="css/main.css" rel="stylesheet">
 
@@ -13,63 +13,68 @@
 
   <body>
 
-<div class="topbanner"> 
-    <div class="logo"><a class="active" href="index.html">EVERELECTION</a></div>
-    <ul>    
-      <li><a href="product_listing.html">Woman</a></li>
-      <li><a href="#combined_elements">Man</a></li>
-      <li><a href="#text_elements" >Kids</a></li>
-      <li><a href="#interactive_elements" >Baby</a></li>
-    </ul>
-</div>
-
-<section class="element">
-<div class="shoppingCart">
-  <div class="cartimg"><img src="imgs/img1.png" alt="prodctimg"></div>
-  <div class="bag-total">
-    <div class="itemtitle"><p class="itemname">Man golden T-shirt</p></div>
-    <div class="subtotal">
-      <p class="small">Subtotal:</p>
-      <p class="small">$79.00</p>
+    <div class="topbanner"> 
+      <div class="logo"><a class="active" href="index.html">COCOMOLO</a></div>
+      <ul>    
+        <li><a href="productlist.html">Products</a></li>
+        <li><a href="bestsellers.html" >Best Sellers</a></li>
+        <li><a href="#" >Favourites</a></li>
+        <li><a href="checkout.html" >Cart</a></li>
+        <li><a href="#" >Contact Us</a></li>
+      </ul>
     </div>
-    <div class="delivery">
-      <p class="small">Delivery (Standard - 2 working days):<br>
-        <a href="#" class="change-delivery">Change delivery method</a>
-      </p>
-      <p class="delivery-price">Free</p>
-    </div>
-    <div class="total">
-      <h3>Total:</h3>
-      <h3>$79.00</h3>
-    </div>
-  </div>
-</div>
-</section>
 
-<section class="element">
+    <section class="element">
+    <div class="shoppingCart">
+      <div class="cartimg"><img src="images/earring.jpg" width="500" height="550" alt="prodctimg"></div>
+      <div class="bag-total">
+        <div class="itemtitle">
+          <p class="itemname">Heart Dangle Earrings</p>
+          <h3 class="subtitle">pink and green</h3>
+        </div>
+        <div class="subtotal">
+          <p class="small">Subtotal:</p>
+          <p class="small">$13.00</p>
+        </div>
+        <div class="delivery">
+          <p class="small">Delivery (Standard - 2 working days):<br>
+            <a href="#" class="change-delivery">Change delivery method</a>
+          </p>
+          <p class="delivery-price">Free</p>
+        </div>
+        <div class="total">
+          <h3>Total:</h3>
+          <h3>$13.00</h3>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+    <section class="element">
 
-    <div class="paymentform">
-        <div class="billingaddress">
-        <div class="paymenttitle">Billing Address</div>
-        <div class="paymentinfo"> Full Name</div>
-        <input type="text" class="paymentinfoinput" id="fname" name="fullname" placeholder="Jean Doe">
-        <div class="paymentinfo"> Email</div>
-        <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
-        <div class="paymentinfo"> Address</div>
-        <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
-        <div class="paymentinfo"> City</div>
-        <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
-      </div>
-      <div class="payment">
-        <div class="paymenttitle">Payment</div>
-        <div class="paymentinfo">Name on Card</div>
-        <input type="text" class="paymentinfoinput" id="cname" name="cardname">
-        <div class="paymentinfo">Credit card number</div>
-        <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
-        <div class="paymentinfo">Exp Date</div>
-        <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
-        <div class="paymentinfo">CVV</div>
-        <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
-      </div>
-      </div>
-</section>
+        <div class="paymentform">
+            <div class="billingaddress">
+            <div class="paymenttitle">Billing Address</div>
+            <div class="paymentinfo"> Full Name</div>
+            <input type="text" class="paymentinfoinput" id="fname" name="fullname" placeholder="Jean Doe">
+            <div class="paymentinfo"> Email</div>
+            <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
+            <div class="paymentinfo"> Address</div>
+            <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
+            <div class="paymentinfo"> City</div>
+            <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
+          </div>
+          <div class="payment">
+            <div class="paymenttitle">Payment</div>
+            <div class="paymentinfo">Name on Card</div>
+            <input type="text" class="paymentinfoinput" id="cname" name="cardname">
+            <div class="paymentinfo">Credit card number</div>
+            <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <div class="paymentinfo">Exp Date</div>
+            <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
+            <div class="paymentinfo">CVV</div>
+            <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
+          </div>
+          </div>
+    </section>
+  </body>

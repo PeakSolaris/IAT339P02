@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -28,14 +28,15 @@
       </nav>
 
       <div class="topbanner"> 
-        <div class="logo"><a class="active" href="#about">EVERELECTION</a></div>
+        <div class="logo"><a class="active" href="index.html">COCOMOLO</a></div>
         <ul>    
-          <li><a href="product_listing.html">Baby</a></li>
-          <li><a href="#combined_elements">Kids</a></li>
-          <li><a href="#text_elements" >Man</a></li>
-          <li><a href="#interactive_elements" >Woman</a></li>
+          <li><a href="productlist.html">Products</a></li>
+          <li><a href="bestsellers.html" >Best Sellers</a></li>
+          <li><a href="#" >Favourites</a></li>
+          <li><a href="checkout.html" >Cart</a></li>
+          <li><a href="#" >Contact Us</a></li>
         </ul>
-    </div>
+      </div>
 
     </header>
 
@@ -91,7 +92,7 @@
       <section class="element">
         <h3>Text Input Field with Label</h3>
         <h4>CSS selector:</h4>
-        <p></p>
+        <p>input</p>
         <h4>Sample code:</h4>
         <code>&lt;label for="fname">First name:&lt;/label&gt;</code>
         <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
@@ -130,14 +131,14 @@
       <section class="element">
         <h3>Image as a Link</h3>
         <h4>CSS selector:</h4>
-        <p>.image-as-a-link</p>
+        <p>.linked-img</p>
         <h4>Sample code:</h4>
         <code>&lt;a href="#"&gt;&lt;img src="#" alt="exmaple"&gt;</code>
 
         <h4>Rendered element:</h4>
         <p>The image below is a link. Try to click on it.</p>
 
-        <a href="#" class="image-as-a-link"><img class="imgshow" src="imgs/img1.png" alt="Uniqlo example"></a>
+        <a href="#"><img src="imgs/img1.png" width="320" height="350" alt="Uniqlo example" class="linked-img"></a>
       </section>
 <!-- image here is from uniqlo.com/ca website -->
 
@@ -221,37 +222,47 @@
         <code>&lt;div class="prodctname"&gt;&lt;p&gt;Golden T-shirt&lt;/p&gt;&lt;/div&gt;</code>
         <h4>Rendered element:</h4>
         <div class="card_desing_prduct">
-          <div class="itemCard">
+            <div class="itemCard">
+                <a class="in-text-link" href="#">
+                    <div class="crd_img">
+                        <img class="itemimg" src="images/earring.jpg" alt="">
+                    </div>
+                    <div class="crd_hdng">
+                        <h5>Jewelry</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="itemCard">
+                <a class="in-text-link" href="#">
+                    <div class="crd_img">
+                        <img class="itemimg" src="images/scrunchies.jpg" alt="">
+                    </div>
+                    <div class="crd_hdng">
+                        <h5>Hair Wear</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="itemCard">
               <a class="in-text-link" href="#">
                   <div class="crd_img">
-                      <img class="itemimg" src="imgs/img1.png" alt="">
+                      <img class="itemimg" src="images/charm.jpg" alt="">
                   </div>
                   <div class="crd_hdng">
-                      <h5>Man's wear</h5>
+                      <h5>Phone Accessories</h5>
                   </div>
               </a>
           </div>
-          <div class="itemCard">
-              <a class="in-text-link" href="#">
-                  <div class="crd_img">
-                      <img class="itemimg" src="imgs/img3.png" alt="">
-                  </div>
-                  <div class="crd_hdng">
-                      <h5>Woman's wear</h5>
-                  </div>
-              </a>
-          </div>
-          <div class="itemCard">
-            <a class="in-text-link" href="#">
-                <div class="crd_img">
-                    <img class="itemimg" src="imgs/img2.png" alt="">
-                </div>
-                <div class="crd_hdng">
-                    <h5>Kid's wear</h5>
-                </div>
-            </a>
         </div>
-      </div>
+        <!--
+          Heart earring image source:
+          Cocomolo. (2020). –In Richmond, British Columbia. Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./919212008544539/?type=3
+
+          Scrunchies image source:
+          Cocomolo. (2020). Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./984154768716929/?type=3
+
+          Phone charm image source:
+          Cocomolo. (2021). –at Metropolis at Metrotown. Retrieved from https://www.facebook.com/photo/?fbid=1224087978056939&set=pcb.1224088044723599
+        -->
 
       </section>
       <br>
@@ -303,11 +314,15 @@
         <code>&lt;div class="cartprodctPrice"&gt;$20&lt;/div&gt;</code>
         <h4>Rendered element:</h4>
         <div class="shoppingCart">
-          <div class="cartimg"><img src="imgs/img1.png" alt="prodctimg"></div>
+          <div class="cartimg"><img src="images/earring.jpg" width="500" height="550" alt="prodctimg"></div>
           <div class="bag-total">
+            <div class="itemtitle">
+              <p class="itemname">Heart Dangle Earrings</p>
+              <h3 class="subtitle">pink and green</h3>
+            </div>
             <div class="subtotal">
               <p class="small">Subtotal:</p>
-              <p class="small">$79.00</p>
+              <p class="small">$13.00</p>
             </div>
             <div class="delivery">
               <p class="small">Delivery (Standard - 2 working days):<br>
@@ -317,7 +332,7 @@
             </div>
             <div class="total">
               <h3>Total:</h3>
-              <h3>$79.00</h3>
+              <h3>$13.00</h3>
             </div>
           </div>
         </div>
@@ -328,22 +343,41 @@
 
     <section id="brandingIdeas">
       <h2>Basic branding ideas</h2>
-          <p>Our main business is the sale of clothing, and we sell clothes for all genders and all ages, so that even babies can shop for their own clothing.
-          Human beings of all ages who need to buy clothes.
-          Because we offer a wide variety of types of clothes, our customers can pick and choose at will because of our comprehensiveness and low prices.
-          Font selection: Helvetica and Times new roman
-          Color platte & moodboard please visit <a href="https://www.figma.com/file/cOELGWmbE3Ip7AzzP53XY9/IAT339-Moodboard?node-id=1%3A2&t=i2o2AqvUbTrpHkjV-1">here</a>.
+          <p>Cocomolo is a company that offers a wide range of accessories and jewelry, primarily targeted towards women but available for anyone to purchase.
+            Our offerings include hair accessories, headwear, bags, and handmade jewelry that cater to a range of styles, including trendy, retro, and fun.
+            Our products are designed to appeal to individuals who enjoy accessorizing with items such as rings, hair clips, and bags, and who are interested in fashion trends.
+            Our handmade products showcase originality and authenticity, and our company is also committed to sustainability.
+            <br>
+            &ensp;• &ensp;Potential imagery & moodboard: Please visit <a href="https://www.figma.com/file/yPF85XCZKpze7hZgN5Jj9K/Untitled?node-id=0%3A1&t=aDE1mGf9LbNlBvxu-1">here</a>.
           </p>
 
           <div class="colorscheme"><p>
-            color plattes:
-            </p>
-            <div class="colorplate1"> color scheme1</div>
-            <div class="colorplate2"> color scheme1</div>
-            <div class="colorplate3"> color scheme1</div>
-            <div class="colorplate4"> color scheme1</div>
-            <p>Fonts: Helvetica</p>
+            <strong>Color Palettes:</strong></p>
+            <div id="blackbox"></div><p>&ensp;#000000 – Black</p>
+            <p>&ensp;• &ensp;The black colour will be used for the main headings and paragraphs. For instance, it will be used for product descriptions and text in the main navigation.</p>
+            <div id="redbox"></div><p>&ensp;#df2c4d – Cherry Red</p>
+            <p>&ensp;• &ensp;The cherry red colour will be used to highlight the item that is being hovered over.</p>
+            <div id="greenbox"></div><p>&ensp;#84a37e – Muted Green</p>
+            <p>&ensp;• &ensp;The muted green is used for the header background.
+            <div id="whitebox"></div><p>&ensp;#ffffff – White</p>
+            <p>&ensp;• &ensp;The white will be used for the background of the page because it provides brightness and adds vibrancy to the design.</p>
+            <p>The muted green and the white will induce a welcoming atmosphere. The red will give a pop of colour and can add a retro-style feel to the website.</p>
+            
+            <p><strong>Fonts: LATO & POPPINS</strong></p>
           </div>
+          <p>&ensp;• &ensp;The main font used for the website will be Lato by Łukasz Dziedzic. Lato not only exudes a friendly and inviting aura, but also conveys a sense of professionalism.</p>
+          <p>&ensp;• &ensp;I also use Poppins by Indian Type Foundy because it evokes a calm mood and the appearance isn't too overwhelming for the user.</p>
+          <!--
+            Source used for colour demo box:
+            Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from https://www.thesitewizard.com/css/create-coloured-box.shtml
+
+            Source used for spacing in paragraphs:
+            3 ways to add HTML space between words on same line. (n.d.). Retrieved from https://wonderdevelop.com/html-space-between-words-on-same-line/
+            
+            Font sources:
+            Dziedzic, Łukasz. (2010). Lato [Font]. Retrieved from https://fonts.google.com/specimen/Lato
+            Indian Type Foundy. (2014). Poppins [Font]. Retrieved from https://fonts.google.com/specimen/Poppins
+          -->
          
     </section>
 
@@ -358,8 +392,6 @@
       </p>
 
     </section>
-
-
 
   </body>
 </html>
