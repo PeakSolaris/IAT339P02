@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+}
+/*
+  Source used for setting all elements to use the border-box model:
+  Haw, A. (n.d.). CSS layout tutorial (IAT-235). Retrieved by https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100
+*/
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  height: 200px;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+/*
+Source used for flex boxes (ie. display, flex-wrap and flex-direction):
+Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/flexbox-cheatsheet
+*/
+
+.block{
+  height: 32em;
+  width: 20em;
+  margin-left: 0px;
+  margin-right: 20px; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+  
+.container .block p {
+  padding: 0.5rem;
+  
+}
+/*
+.container .block:nth-of-type(even) {
+  background-color: #333;
+}
+
+.container .block:nth-of-type(even) p {
+  color: white;
+}
+      
+.container .block:nth-of-type(odd) {
+  background-color: #AAA;
+}
+*/
+
+@media all{
+ .container .block{
+   flex: auto;
+ }
+}
+
+/*
+  Source used for media queries:
+	Lepage, P., & Andrew, R. (2022). Responsive web design basics. Retrieved from https://web.dev/responsive-web-design-basics/
+
+  Source used to order blocks:
+  Ordering flex items. (n.d.). Retrieved from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items
+
+  To have the order reversed instead - Order: 5, 4, 3, 2, 1:
+  .container{
+    flex-direction:row-reverse;
+  }
+
+  Source used for flex-direction:
+  Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/flexbox-cheatsheet
+*/
+
+/*
+  Source used for auto size boxes:
+  Haw, A. (n.d.). CSS layout tutorial (IAT-235). Retrieved by https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100
+*/
