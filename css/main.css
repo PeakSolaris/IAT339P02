@@ -647,3 +647,44 @@ Earring Product Page Styling
   Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. Youtube https://www.youtube.com/watch?v=F-6hvovxaSs
 */
 
+/*
+Contact Us Page
+*/
+.contact{
+  margin-top: 0;
+  font-size:1.5rem;
+  font-weight: bold;
+  font-family: "Poppins",sans-serif;
+}
+
+select{
+  border-radius: 0.9375rem;
+  font: 14px/1.4 "Poppins",sans-serif;
+  font-weight: 60;
+}
+
+.customerinfo{
+  margin-top:.5rem;
+}
+
+.contactinfo select{
+  margin-bottom:.25rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height:3.5rem;
+  width:97%;
+  font: 14px/1.4 "Poppins",sans-serif;
+  font-weight: 60;
+}
+
+.comment input{
+  height:5rem;
+}
+
+.rightinfo{
+  padding-left: 1rem;
+  padding-top: 2rem;
+  width:47.25%;
+  height:32.4rem;
+}
