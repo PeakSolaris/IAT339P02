@@ -8,7 +8,8 @@
 
 body {
   font-family: "Lato",sans-serif;
-  padding: 2rem
+  padding: 2rem;
+  overflow-x:hidden;
 }
 
 .element {
@@ -24,10 +25,10 @@ section {
 }
 
 h1 {
-  font-family: "Lato-Light",sans-serif;
+  font-family: "Lato",sans-serif;
   padding: 4rem;
   text-align: center;
-  font-weight: 60;
+  font-weight: 30;
   font-size:2rem;
 }
 
@@ -48,10 +49,8 @@ h4 {
 /*Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks.*/
 
 p {
-  font-family: "Poppins",sans-serif;
   width: 1000px;
   margin-top: 0;
-  font-weight: 60;
 }
 
 nav a:hover, nav a:focus {
@@ -266,6 +265,7 @@ li a:hover:not(.active) {
     
   }
 
+
   .topbanner ul{
     flex-direction: column;
   }
@@ -391,7 +391,6 @@ input[type=number]{
 
 .shoppingCart{
   display: flex;
-  justify-content: center;
   
 }
 
