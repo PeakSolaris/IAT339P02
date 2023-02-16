@@ -5,11 +5,12 @@
 
 /*Change the default font.*/
 
-
+*{
+  box-sizing: border-box;
+}
 body {
   font-family: "Lato",sans-serif;
-  padding: 2rem;
-  overflow-x:hidden;
+  padding: 2rem
 }
 
 .element {
@@ -25,7 +26,7 @@ section {
 }
 
 h1 {
-  font-family: "Lato",sans-serif;
+  font: "LATO",sans-serif;
   padding: 4rem;
   text-align: center;
   font-weight: 30;
@@ -83,10 +84,11 @@ code {
 /*Add a different hover and focus state styling to the in-text link.*/
 .in-text-link{
   color: black;
+  
 }
 .in-text-link:hover{
   color:#84a37e;
-  text-decoration: underline;
+  text-decoration: none;
 
 }
 
@@ -221,7 +223,7 @@ input:focus{
 .topbanner .logo a{
   text-decoration: none;
   color: #f7f7f2;
-  font-family: "Lato",sans-serif;
+  font: "Lato",sans-serif;
   font-weight: bold;
 }
 
@@ -268,10 +270,6 @@ li a:hover:not(.active) {
 
   .topbanner ul{
     flex-direction: column;
-  }
-
-  .flex-box{
-    flex-direction:column;
   }
   
 }
@@ -348,7 +346,7 @@ li a:hover:not(.active) {
 }
 
 .paymenttitle{
-  font-family: "Poppins",sans-serif;
+  font: "Poppins",sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   padding: 2rem 4rem 2rem 0rem;
@@ -391,9 +389,8 @@ input[type=number]{
 
 .shoppingCart{
   display: flex;
-  
+  justify-content: center;
 }
-
 .cartimg,.bag-total{
   background-color: #e7e7e7;
   padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
@@ -499,18 +496,6 @@ input[type=number]{
   border: 1px solid #000000 ;
   width: 1px;
 }
-
-/*
-Source used for colour demo box:
-Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from https://www.thesitewizard.com/css/create-coloured-box.shtml
-
-Source used for float left:
-Applying color to HTML elements using CSS. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color
-*/
-
-/*
-Earring Product Page Styling
-*/
 
 .flex-box{
   display:flex;
@@ -687,3 +672,58 @@ select{
   width:47.25%;
   height:32.4rem;
 }
+
+
+.headertop{
+  display:flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+
+}
+
+.headertop>div:nth-of-type(2){
+  text-align: center;
+}
+.headertop a{
+  color: #84a37e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.headertop a:hover{
+  color: #395870;
+}
+
+@media screen and (max-width:850px) {  
+  .topbanner{
+    display: none;
+  }
+}
+
+.common-button{
+  background-color: #84a37e;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.5s;
+  display: inline-block;
+  width: 20rem;
+  padding: 0.5rem 2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* .common-button a:hover, .common-button a:focus{
+
+} */
+
+
+
+/*
+Source used for colour demo box:
+Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from https://www.thesitewizard.com/css/create-coloured-box.shtml
+
+Source used for float left:
+Applying color to HTML elements using CSS. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color
+*/
