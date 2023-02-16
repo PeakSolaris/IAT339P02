@@ -266,9 +266,12 @@ li a:hover:not(.active) {
     
   }
 
-
   .topbanner ul{
     flex-direction: column;
+  }
+
+  .flex-box{
+    flex-direction:column;
   }
   
 }
@@ -505,3 +508,142 @@ Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved
 Source used for float left:
 Applying color to HTML elements using CSS. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color
 */
+
+/*
+Earring Product Page Styling
+*/
+
+.flex-box{
+  display:flex;
+  width:64rem;
+  margin: 1rem auto;
+  margin-top:3rem;
+}
+
+.left{
+  justify-content: center;
+  width:50%;
+}
+
+.right{
+  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
+}
+
+.images{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 1em;
+}
+
+.small-img{
+  width: 7rem;
+  overflow:hidden;
+} 
+
+.small-img img{
+  width:inherit;
+  cursor:pointer;
+  transition: all 0.3s ease;
+}
+
+.small-img:hover img{
+  transform: scale(1.2);
+}
+
+.quantity input[type=number]{
+  margin-top:0.5rem;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.75rem;
+  width: 10%;
+  height: .5%;
+}
+
+.url{
+  font-size:16px;
+  font-weight:400;
+  color: #df2c4d;
+}
+
+.prodname{
+  font-size:22px;
+  font-weight:600;
+  margin-top:3.125rem;
+}
+
+.ratings i{
+  color: red;
+}
+
+.price{
+  font-size:1.25rem;
+  font-weight:500;
+  margin: 1.25rem 0;
+}
+
+.colour{
+  align-items:center;
+}
+
+.prodcolour p{
+  font-size:1.125rem;
+  font-weight: 500;
+}
+
+.quantity p{
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.quantity input{
+  width:1.875rem;
+  font-size:1rem;
+  font-weight:500;
+  text-align:center;
+}
+
+.description p{
+  max-width: 30rem;
+  font-family: "Poppins",sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-size:1rem;
+  font-weight: 60;
+}
+
+.btn-box{
+  display:flex;
+  margin-top:2rem;
+}
+
+.btn-box input{
+  font-size:1rem;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.cart-btn{
+  border: 0.25rem solid #84a37e;
+  margin-right:1rem;
+}
+
+.buy-btn{
+  border: 0.25rem solid #1b4f11;
+}
+
+.cart-btn:hover{
+  border: 0.25rem solid #df2c4d;
+}
+
+.buy-btn:hover{
+  border: 0.25rem solid #df2c4d;
+}
+
+/*
+  Source used for earring product page styling:
+  Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. Youtube https://www.youtube.com/watch?v=F-6hvovxaSs
+*/
+
