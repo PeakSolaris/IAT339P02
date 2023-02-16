@@ -1,0 +1,90 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  padding: 4rem;
+  text-align: center;
+  font-weight: 30;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 6rem;
+  font-size: 3em;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+/*Hero section start*/
+.Hero-section {
+  background-image: url("../images/Hero1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Footer section start*/
+.site-footer {
+  background-color:#84a37e;
+  padding: 45px 0.5rem 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: beige;
+}
+
+/* .site-footer hr {
+  border-top-color: beige;
+  opacity: 0.5
+}
+
+.site-footer hr.small {
+  margin: 20px 0
+} */
+
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.site-footer a {
+  color: beige;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+.site-footer .copyright-text,
+ .site-footer .social-icons {
+    text-align: center;
+}
+
+
+
+
