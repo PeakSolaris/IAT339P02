@@ -271,10 +271,6 @@ li a:hover:not(.active) {
   .topbanner ul{
     flex-direction: column;
   }
-
-  .flex-box{
-    flex-direction:column;
-  }
   
 }
 .card_desing_prduct{
