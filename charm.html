@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocomolo - Charms</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/reviews.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="headertop">
+        <div><a href="#">FIND A STORE</a></div>
+        <div><a href="homepage.html">COCOMOLO</a></div>
+        <div>
+            <a href="#">SEARCH</a>
+            <a href="#">SIGN IN</a>
+            <a href="checkout.html">CART</a>
+        </div>
+    </div>
+    <div class="topbanner">
+        <div class="mobile-icon"><i class=""></i></div>
+        <ul>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="bestsellers.html">Best Sellers</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+  <section class ="product-details">
+    <div class="flex-box">
+      <div class="left">
+        <div class="big-img">
+          <img src="images/charm.jpg" width="500" height="550" alt="prodctimg">
+        </div>
+        <div class = "images">
+          <div class = "small-img">
+            <img src="images/charm.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+          <div class = "small-img">
+            <img src="images/charm2.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+          <div class = "small-img">
+            <img src="images/charm3.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+        </div>
+      </div>
+      <!--
+        Candy cellphone charm image source #1 (charm.jpg):
+        Cocomolo. (2021). Retrieved from https://www.facebook.com/photo?fbid=1224087978056939&set=pcb.1224088044723599
+
+        Candy cellphone charm source #2 (charm2.jpg):
+        Cocomolo. (2021). Retreived from https://www.facebook.com/photo?fbid=1224087974723606&set=pcb.1224088044723599
+
+        Candy cellphone charm source #4 (charm3.jpg):
+        Cocomolo. (2021). Retrieved from https://www.facebook.com/photo?fbid=1224087968056940&set=pcb.1224088044723599
+        -->
+
+      <div class="right">
+        <div class="url">Home > Product > Candy Cellphone Charm</div>
+        <div class="prodname">Candy Cellphone Charm</div>
+        <div><h3 class="subtitle">––––––––</h3></div>
+        <div class="price">$11.00</div>
+        <div class="description">
+          <p>The candy cellphone charm is the perfect accessory to add a touch of sweetness and whimsy to your phone! This charming charm is made from high-quality, durable materials and features a colorful, mouth-watering candy design that is sure to catch the eye of anyone who sees it.</p>
+          <p>Not only is the candy cellphone charm a fun and playful way to show off your personality, but it also doubles as a convenient way to keep your phone within easy reach. Simply attach it to your phone's case or strap and you'll never have to dig through your bag or pockets to find your device again!</p>
+          <p>Whether you're a candy lover or just looking for a unique and fun way to accessorize your phone, the cellphone charm is the perfect choice. So why wait? Add a touch of sweetness to your life today with this irresistible charm!</p>
+        </div>   
+
+        <div class="colour">
+          <p>Colour:</p>
+          <select name="browse">
+            <option class="prodcolour" value="Red">Red</option>
+            <option class="prodcolour" value="Purple" >Purple</option>
+            <option class="prodcolour" value="Green" >Green</option>
+            <option class="prodcolour" value="pastel" >Pastel (yellow, pink, blue, green)</option>
+            <option class="prodcolour" value="clear">Clear</option>
+            <option class="prodcolour" value="blue" >Purple</option>
+            <option class="prodcolour" value="Multicolour" selected>Multicolour (yellow, purple, green, orange)</option>
+            <option class="prodcolour" value="orange">Orange</option>
+          </select> 
+        </div>
+        <div class="quantity">
+          <p>Quantity:</p>
+          <input type="number" min="1" max="5" value="1">        
+        </div>
+        <div class="btn-box">
+          <input  class = "cart-btn" type="submit" value="Add to Cart">
+          <input  class = "buy-btn" type="submit" value="Buy It Now"><a href="checkout.html"></a>
+        </div>
+        
+      </div>
+
+    </div>
+
+      <script>
+          let bigImg = document.querySelector('.big-img img');
+          function showImg(pic){
+            bigImg.src = pic;
+          }
+      </script>
+  </section>
+
+    
+  <!--
+  Source used for the product details layout:
+  Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. https://www.youtube.com/watch?v=F-6hvovxaSs
+  -->
+
+  <section class="feedback">
+    <div class ="inner">
+      <h1 class="review-section">Customer Reviews</h1>
+      <div class="border"></div>
+      <br>
+      <select name="browse">
+        <option value="best-selling">Top Rated</option>
+        <option value="price-high">Most Helpful</option>
+        <option value="price-low" selected>Newest</option>
+      </select> 
+      <div class="row">
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★★★</p>
+            <p class="author">Jane H. · verified buyer</p>
+            <p class="date">02/28/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Green</p>
+            <br>
+            <p class="comment">These candy cellphone charms are so cute and fun! They add a pop of color to my phone and are a great conversation starter. The quality is great and they haven't fallen off or lost their color despite being on my phone for a while. Highly recommend for anyone looking to add some personality to their phone!</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★★★</p>
+            <p class="author">Saryl R. · verified buyer</p>
+            <p class="date">02/27/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Multicolour (yellow, purple, green, orange)</p>
+            <br>
+            <p class="comment">I was pleasantly surprised by the quality of these candy cellphone charms. They're not flimsy like some other cellphone charms I've seen, and they're really cute. I like that they're different colors so I can switch them out depending on my mood. They're definitely a fun addition to my phone.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★☆☆</p>
+            <p class="author">Ella T. · verified buyer</p>
+            <p class="date">02/25/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Orange</p>
+            <br>
+            <p class="comment">While these candy cellphone charms are definitely eye-catching, I found that they got in the way a lot when I was trying to use my phone. They also added a lot of bulk to my phone case, making it harder to fit in my pocket.</p>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div><a href="#">&gt;</a></div>
+        </div>
+
+        <div class="down-arrow">
+          <div><a href="#">v</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--
+  Source used for customer review layout:
+  DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. https://www.youtube.com/watch?v=zkyIVFoLxgY
+  -->
+
+</body>

@@ -1,0 +1,136 @@
+*{
+  margin:0rem;
+}
+.feedback{
+  padding:40px 0;
+  color: #434343;
+  text-align: left;
+}
+
+.inner{
+  max-width: 1200px;
+  margin:auto;
+  overflow:hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width:10rem;
+  height:0.25rem;
+  background: #84a37e;
+  margin: 1rem auto;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.col{
+  flex:100%;
+  max-width:30%;
+  box-sizing:border-box;
+  padding:15px;
+}
+
+.arrow{
+  flex:10%;
+  max-width:5%;
+  box-sizing:border-box;
+  padding:15px;
+  margin-top: 5rem;
+}
+
+.arrow a{
+  font-size: 6rem;
+  color: #84a37e;
+  text-decoration: none;
+}
+
+.arrow a:hover{
+  color: #df2c4d;
+}
+
+.down-arrow{
+  display:none;
+  flex:30%;
+  max-width:21%;
+  box-sizing:border-box;
+  padding:30px;
+}
+
+.down-arrow a{
+  font-size: 6rem;
+  color: #84a37e;
+  text-decoration: none;
+}
+
+.down-arrow a:hover{
+  color: #df2c4d;
+}
+
+.review-box{
+  background:#dce7d9;
+  padding:30px;
+}
+
+.star{
+  color:#df2c4d;
+}
+
+@media screen and (max-width:850px){
+  .col{
+    flex:100%;
+    max-width:80%
+  }
+  .arrow{
+    display:none;
+  }
+
+  .down-arrow{
+    display:block;
+  }
+
+  
+}
+
+.rating {
+  display: flex;
+}
+
+.rating p{
+  color: #df2c4d;
+}
+
+.author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-section{
+  padding: 0.5rem;
+}
+
+.date {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.type  {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width:100%;
+}
+
+.comment {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width:100%;
+}
+
+/*
+  Source used for customer review styling:
+  DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. https://www.youtube.com/watch?v=zkyIVFoLxgY
+*/
