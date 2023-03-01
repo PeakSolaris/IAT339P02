@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocomolo - Hats</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/reviews.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="headertop">
+        <div><a href="#">FIND A STORE</a></div>
+        <div><a href="homepage.html">COCOMOLO</a></div>
+        <div>
+            <a href="#">SEARCH</a>
+            <a href="#">SIGN IN</a>
+            <a href="checkout.html">CART</a>
+        </div>
+    </div>
+    <div class="topbanner">
+        <div class="mobile-icon"><i class=""></i></div>
+        <ul>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="bestsellers.html">Best Sellers</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+  <section class ="product-details">
+    <div class="flex-box">
+      <div class="left">
+        <div class="big-img">
+          <img src="images/hat.jpg" width="500" height="550" alt="prodctimg">
+        </div>
+        <div class = "images">
+          <div class = "small-img">
+            <img src="images/hat.jpg" width="100" height="139" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+          <div class = "small-img">
+            <img src="images/hat2.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+          <div class = "small-img">
+            <img src="images/hat3.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+          <div class = "small-img">
+            <img src="images/hat4.jpg" alt="prodctimg" onclick="showImg(this.src)">
+          </div>
+        </div>
+      </div>
+      <!--
+        Bucket hat image source #1 (hat.jpg):
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=1061981947600877&set=pcb.1061982030934202
+
+        Bucket hat image source #2 (hat2.jpg):
+        Cocomolo. (2020). Retreived from https://www.facebook.com/photo?fbid=1061981944267544&set=pcb.1061982030934202
+        
+        Bucket hat image source #3 (hat3.jpg):
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo?fbid=1061981940934211&set=pcb.1061982030934202
+
+        Bucket hat image source #4 (hat4.jpg):
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo?fbid=1061981937600878&set=pcb.1061982030934202
+        -->
+
+      <div class="right">
+        <div class="url">Home > Product > Teddy Bucket Hat</div>
+        <div class="prodname">Teddy Bucket Hat</div>
+        <div><h3 class="subtitle">––––––––</h3></div>
+        <div class="price">$35.00</div>
+        <div class="description">
+          <p>Perfect for those who love to stand out from the crowd, this hat is sure to become your go-to accessory for any occasion.</p>
+          <p>With its soft and comfortable lining, it will keep your head warm and protected from the elements, while the bucket shape provides full coverage to shield your face from the sun.</p>
+          <p>This hat is the perfect way to add a touch of whimsy to your look. It's perfect for pairing with your favorite casual outfits or dressing up for a night out with friends.</p>
+        </div>   
+        <!--
+        Source referred to for product description:
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./919210948544645/?type=3
+        -->
+
+        <div class="colour">
+          <p>Colour:</p>
+          <select name="browse">
+            <option class="prodcolour" value="cream">Cream</option>
+            <option class="prodcolour" value="coffee" selected>Coffee</option>
+            <option class="prodcolour" value="black">Black</option>
+          </select> 
+        </div>
+        <div class="quantity">
+          <p>Quantity:</p>
+          <input type="number" min="1" max="5" value="1">        
+        </div>
+        <div class="btn-box">
+          <input  class = "cart-btn" type="submit" value="Add to Cart">
+          <input  class = "buy-btn" type="submit" value="Buy It Now"><a href="checkout.html"></a>
+        </div>
+        
+      </div>
+
+    </div>
+
+      <script>
+          let bigImg = document.querySelector('.big-img img');
+          function showImg(pic){
+            bigImg.src = pic;
+          }
+      </script>
+  </section>
+
+<!--
+  Source used for the product details layout:
+  Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. https://www.youtube.com/watch?v=F-6hvovxaSs
+-->
+
+<section class="feedback">
+  <div class ="inner">
+    <h1>Customer Reviews</h1>
+    <div class="border"></div>
+    <br>
+     <select name="browse">
+      <option value="best-selling">Top Rated</option>
+      <option value="price-high">Most Helpful</option>
+      <option value="price-low" selected>Newest</option>
+    </select> 
+    <div class="row">
+      <div class="col">
+        <div class="review-box">
+          <p class="star">★★★★★</p>
+          <p class="author">Delora S. · verified buyer</p>
+          <p class="date">02/27/23</p>
+          <br>
+          <p class="type"><strong>Colour:</strong> Coffee</p>
+          <br>
+          <p class="comment">The hat is so cozy and warm, and it's been the perfect accessory for chilly days. The quality is top-notch and it looks just as good in person as it does in the photos.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="review-box">
+          <p class="star">★★★★☆</p>
+          <p class="author">Marshall L. · verified buyer</p>
+          <p class="date">02/27/23</p>
+          <br>
+          <p class="type"><strong>Colour:</strong> Black</p>
+          <br>
+          <p class="comment">I purchased this teddy bucket hat for my daughter and she loves it! It fits well and stays in place even when she's running around.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="review-box">
+          <p class="star">★★★★☆</p>
+          <p class="author">Finn M. · verified buyer</p>
+          <p class="date">02/27/23</p>
+          <br>
+          <p class="type"><strong>Colour:</strong> Cream</p>
+          <br>
+          <p class="comment">The teddy bucket hat is definitely a fun and trendy accessory, but I found that it wasn't very practical for everyday wear. It doesn't pack down well and takes up a lot of space in a bag, and it's not great for rainy days. It's cute, but not very functional.</p>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <div><a href="#">&gt;</a></div>
+      </div>
+
+      <div class="down-arrow">
+        <div><a href="#">v</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--
+  Source used for customer review layout:
+  DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. https://www.youtube.com/watch?v=zkyIVFoLxgY
+-->
+  
+
+</body>
