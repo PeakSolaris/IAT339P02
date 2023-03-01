@@ -8,6 +8,7 @@
   <title>Cocomolo - Earrings</title>
 
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/reviews.css" rel="stylesheet">
 
 </head>
 
@@ -33,7 +34,6 @@
         </ul>
     </div>
   </header>
-
   <section class ="product-details">
     <div class="flex-box">
       <div class="left">
@@ -57,13 +57,13 @@
       </div>
       <!--
         Heart earring image source #1 (earring3.jpg):
-        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=919211918544548&set=pb.100036786325592.-2207520000.
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=919211918544548&set=pb.100036786325592.-2207520000
 
         Heart earring image source #2 (earring.jpg):
-        Cocomolo. (2020). Retreived from https://www.facebook.com/photo/?fbid=919212008544539&set=pb.100036786325592.-2207520000.
+        Cocomolo. (2020). Retreived from https://www.facebook.com/photo/?fbid=919212008544539&set=pb.100036786325592.-2207520000
 
         Heart earring image source #3 (earring2.jpg):
-        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=919211961877877&set=pb.100036786325592.-2207520000.
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=919211961877877&set=pb.100036786325592.-2207520000
 
         Heart earring image source #4 (earring4.jpg):
         Cocomolo. (2020). Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./919210948544645/?type=3
@@ -97,7 +97,7 @@
         </div>
         <div class="btn-box">
           <input  class = "cart-btn" type="submit" value="Add to Cart">
-          <a href="checkout.html"><input  class = "buy-btn" type="submit" value="Buy It Now"></a>
+          <input  class = "buy-btn" type="submit" value="Buy It Now"><a href="checkout.html"></a>
         </div>
         
       </div>
@@ -111,9 +111,75 @@
           }
       </script>
   </section>
+  
+  <!--
+  Source used for the product details layout:
+  Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. https://www.youtube.com/watch?v=F-6hvovxaSs
+  -->
+
+  <section class="feedback">
+    <div class ="inner">
+      <h1>Customer Reviews</h1>
+      <div class="border"></div>
+      <br>
+      <select name="browse">
+        <option value="best-selling">Top Rated</option>
+        <option value="price-high">Most Helpful</option>
+        <option value="price-low" selected>Newest</option>
+      </select> 
+      <div class="row">
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★★★</p>
+            <p class="author">Jane H. · verified buyer</p>
+            <p class="date">02/27/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Pink</p>
+            <br>
+            <p class="comment">I absolutely love these heart dangling earrings! They're so elegant and feminine. I've received so many compliments on them and they go with just about any outfit. Highly recommend!
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★★★</p>
+            <p class="author">Lyra W. · verified buyer</p>
+            <p class="date">02/27/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Pink</p>
+            <br>
+            <p class="comment">I have non-pierced ears, so I was thrilled to find these clip-on heart earrings! They're really comfortable and secure, and the heart design is adorable. The length is just right and they're lightweight enough to wear all day without any discomfort.</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="review-box">
+            <p class="star">★★★★☆</p>
+            <p class="author">Kai C. · verified buyer</p>
+            <p class="date">02/27/23</p>
+            <br>
+            <p class="type"><strong>Colour:</strong> Purple</p>
+            <br>
+            <p class="comment">I bought these earrings for a Valentine's Day gift for my girlfriend and she adores them! They look great on her and I'm glad I made this purchase.</p>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <div><a href="#">&gt;</a></div>
+        </div>
+
+        <div class="down-arrow">
+          <div><a href="#">v</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--
+  Source used for customer review layout:
+  DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. https://www.youtube.com/watch?v=zkyIVFoLxgY
+  -->
 
 </body>
-<!--
-  Source used for the layout:
-  Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS | Ecommerce Website | Rizowan Ahmed Safi [Video]. Youtube https://www.youtube.com/watch?v=F-6hvovxaSs
--->

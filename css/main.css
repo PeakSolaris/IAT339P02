@@ -356,6 +356,7 @@ li a:hover:not(.active) {
   font-weight: bold;
   padding: 2rem 4rem 2rem 0rem;
   color: black;
+  margin-top: 0rem;
 }
 input[type=text]{
   margin-top:0.5rem;
@@ -523,8 +524,7 @@ Earring Product Page Styling
 }
 
 .left{
-  justify-content: center;
-  width:50%;
+  width:70%;
 }
 
 .right{
@@ -533,12 +533,13 @@ Earring Product Page Styling
 
 .images{
   display:flex;
-  justify-content:space-between;
+  justify-content:start;
   margin-top: 1em;
 }
 
 .small-img{
   width: 7rem;
+  margin-right: 1em;
   overflow:hidden;
 } 
 
@@ -617,6 +618,18 @@ Earring Product Page Styling
 .btn-box{
   display:flex;
   margin-top:2rem;
+}
+.cart-box{
+  display:flex;
+  margin-top:4rem;
+}
+
+.cart-box input{
+  font-size:1rem;
+  padding: 1rem 5.4rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
 }
 
 .btn-box input{
@@ -712,11 +725,7 @@ select{
   color: #395870;
 }
 
-@media screen and (max-width:850px) {  
-  .topbanner{
-    display: none;
-  }
-}
+
 
 .common-button{
   background-color: #84a37e;
