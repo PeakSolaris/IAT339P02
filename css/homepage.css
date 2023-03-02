@@ -83,8 +83,5 @@ p{
 .site-footer .copyright-text,
  .site-footer .social-icons {
     text-align: center;
+    max-width: 100%;
 }
-
-
-
-

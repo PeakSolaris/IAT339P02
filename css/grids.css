@@ -6,7 +6,7 @@
   Haw, A. (n.d.). CSS layout tutorial (IAT-235). Retrieved by https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100
 */
 
-.container {
+.flex-container {
   display:flex;
   flex-wrap:wrap;
   height: 200px;
@@ -45,10 +45,26 @@ Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/
 }
 */
 
+.container2{
+  margin-top: 99rem;
+}
+
 @media all{
  .container .block{
    flex: auto;
  }
+}
+
+@media screen and (max-width:1099px){
+  .container2{
+    margin-top: 168rem;
+  } 
+}
+
+@media screen and (max-width:760px){
+  .container2{
+    margin-top: 306rem;
+  } 
 }
 
 /*
