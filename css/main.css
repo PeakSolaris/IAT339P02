@@ -427,7 +427,7 @@ input[type=checkbox]{
 
 .delivery{
   border-bottom:  1px solid #333;
-  width: 100%;
+  width: 50vw;
 }
 .total{
   margin-top: 6rem;
