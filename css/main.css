@@ -14,16 +14,12 @@ body {
   overflow-x:hidden;
 }
 
-.element {
-  padding-bottom: 2rem;
-  padding-left: 4rem;
-}
+
 
 /*Add space between <section> elements.*/
 
 section {
   margin: 4rem 0;
-  
 }
 
 h1 {
@@ -62,7 +58,7 @@ code {
 
 .element a{
   text-decoration: none;
-  color: white;
+  color:black;
 }
 
 .subtitle{
@@ -132,15 +128,16 @@ code {
   margin-top: 1rem;
   padding: 0.5rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: #84a37e;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
-  border-radius: 15px;
+  border-radius: 5px;
+  border: none;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+  border: #84a37e;
   font-weight: bold;
 }
 
@@ -333,23 +330,29 @@ li a:hover:not(.active) {
 
 .paymentform{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: auto;
   margin-top: 4rem;
   max-width: 60rem;
-  
+}
+
+.paymentmethod{
+  display: flex;
+  justify-content: center;
 }
 
 .billingaddress,.payment{
   background-color: #e7e7e7;
-  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
+  padding: 1.5rem 1.75rem 2.5rem 3.75rem ;
   flex: 1;
 }
+
 
 .paymenttitle{
   font-family: "Poppins",sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 2rem 4rem 2rem 0rem;
+  padding: 2rem 0rem 0rem 0rem;
   color: black;
   margin-top: 0rem;
 }
@@ -367,6 +370,11 @@ input[type=number]{
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 90%;
+}
+
+input[type=checkbox]{
+  margin-top: 1rem; 
+  border: 1px solid #84a37e;
 }
 
 .paymentform input:hover{
@@ -390,13 +398,18 @@ input[type=number]{
 
 .shoppingCart{
   display: flex;
+  justify-content: center;
   
 }
 
 .cartimg,.bag-total{
   background-color: #e7e7e7;
-  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
+  padding: 2.5rem 2.75rem 2rem 1.75rem ;
   /*flex: 1;*/
+}
+
+.cartimg img{
+  width: 100%;
 }
 .itemtitle p{
   margin-top: 3rem;
@@ -414,7 +427,7 @@ input[type=number]{
 
 .delivery{
   border-bottom:  1px solid #333;
-  width: 70%;
+  width: 100%;
 }
 .total{
   margin-top: 6rem;
