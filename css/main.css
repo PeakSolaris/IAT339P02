@@ -16,7 +16,9 @@ body {
 
 .element {
   padding-bottom: 2rem;
-  padding-left: 4rem;
+  width: 75vw;
+  margin:auto;
+  /* padding-left: 4rem; */
 }
 
 /*Add space between <section> elements.*/
@@ -34,24 +36,23 @@ h1 {
   font-size:2rem;
 }
 
-h2 {
+/* h2 {
   margin-top: 6rem;
   font-size: 3em;
-}
+} */
 
 h3 {
   font-style: italic;
   margin-top: 1rem;
 }
 
-h4 {
+/* h4 {
   margin-bottom: 0.5rem;
-}
+} */
 
 /*Shorten the default width of the <p> element, but ensure it is still responsive when the viewport shrinks.*/
 
 p {
-  width: 1000px;
   margin-top: 0;
 }
 
@@ -67,7 +68,7 @@ code {
 
 .element a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .subtitle{
@@ -336,29 +337,130 @@ li a:hover:not(.active) {
   
 }
 
-.paymentform{
+.checkout_page {
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  width: 75vw;
+  margin:auto;
   display: flex;
-  justify-content: center;
-  margin-top: 4rem;
+  
+
+  /* padding-left: 4rem; */
+}
+
+.shoppingCart{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.cartiteminfo{
+  display: flex;
+   margin-top: 2rem;
+   margin-left: 4rem;
+  
+}
+
+.cartimg img{
+  margin:30%;
+  width: 50%;
+  margin-top: 20%;
+}
+.cartimg{
+  width:50%
+}
+.bag-total{
+  width: 60%;
+}
+
+.cartiteminfo,.totalbill{
+  background-color: #e7e7e7;
+  
+  /* flex: 1; */
+}
+.totalbill{
+  display: flex;
+  flex-direction: column;
+   margin-left: 4rem;
+  
+}
+
+.itemtitle p{
+  /* border: 1px solid red; */
+  margin-top: 3rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+.subtotal p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtotal{
+  margin-left: 15%;
+ 
+}
+
+.delivery{
+  margin-left: 15%;
+  border-bottom:  1px solid #333;
+  width: 50%;
+}
+.total{
+  margin-left: 15%;
+  margin-top: 1rem;
+  width: 40%;
+  margin-bottom: 0.5rem;
+  
+}
+
+.delivery-price{
+  color: green;
+}
+
+.change-delivery{
+  color: black;
+}
+
+.change-delivery:hover{
+  color:#df2c4d;
+}
+
+@media screen and (max-width:850px){
+  .shoppingCart{
+    flex-direction: column;
+  }
+  
+}
+
+.paymentform{
+ 
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 2rem;
   max-width: 60rem;
+  
   
 }
 
 .billingaddress,.payment{
+
   background-color: #e7e7e7;
   padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .paymenttitle{
+ 
   font-family: "Poppins",sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 2rem 4rem 2rem 0rem;
+  padding: 2rem 4rem 2rem 1rem;
   color: black;
   margin-top: 0rem;
 }
 input[type=text]{
+  
   margin-top:0.5rem;
   padding: 1rem;
   border: 1px solid #ccc;
@@ -393,58 +495,7 @@ input[type=number]{
   
 }
 
-.shoppingCart{
-  display: flex;
-  
-}
 
-.cartimg,.bag-total{
-  background-color: #e7e7e7;
-  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
-  /*flex: 1;*/
-}
-.itemtitle p{
-  margin-top: 3rem;
-  font-size: 20px;
-  font-weight: bold;
-}
-.subtotal p{
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.subtotal{
-  margin-top: 5rem;
-}
-
-.delivery{
-  border-bottom:  1px solid #333;
-  width: 70%;
-}
-.total{
-  margin-top: 6rem;
-  width: 40%;
-  border-radius: 5px;
-}
-
-.delivery-price{
-  color: green;
-}
-
-.change-delivery{
-  color: black;
-}
-
-.change-delivery:hover{
-  color:#df2c4d;
-}
-
-@media screen and (max-width:850px){
-  .shoppingCart{
-    flex-direction: column;
-  }
-  
-}
 
 .footer{
   background-color: #84a37e;
