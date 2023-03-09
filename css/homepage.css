@@ -24,12 +24,7 @@ h4 {
 
 /*Hero section start*/
 .Hero-section {
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin:0;
-  height: 80vh;
-  /*
+  background-image: url("../images/package.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -38,43 +33,11 @@ h4 {
   justify-content: center;
   align-items: center;
   margin:1rem;
-  */
+  
 }
 
 .Hero-section h1 {
   margin-top: 8rem;
-}
-
-.introduction-background{
-  background-image: url("../images/package.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: -11rem;
-  height: 90rem;
-  width: 90rem;
-  z-index: -1;
-  position: fixed;
-  /*
-  background-image: url("../images/package.jpg");
-  background-size: cover;
-  height: 90vh;
-  background-repeat: no-repeat;
-  margin:1rem;
-  width: 100%;
-  z-index: -1;
-  position: fixed;
-  margin-top: -15rem;
-  */
-}
-
-.extra{
-  margin:0;
-  height:3rem;
-  background-color: white;
-}
-
-.introduction-foreground{
-  text-align: center;
 }
 
 .headertop{
