@@ -722,25 +722,7 @@ select{
   height:5rem;
 }
 
-.headertop{
-  display:flex;
-  justify-content: space-around;
-  padding: 0.5rem;
 
-}
-
-.headertop>div:nth-of-type(2){
-  text-align: center;
-}
-.headertop a{
-  color: #84a37e;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.headertop a:hover{
-  color: #395870;
-}
 
 /*
 Source used for colour demo box:

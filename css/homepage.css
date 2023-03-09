@@ -1,6 +1,6 @@
 body {
   font-family: "Lato", sans-serif;
-  font-weight: bold;
+  
 }
 
 h2 {
@@ -39,10 +39,31 @@ h4 {
 
 .Hero-section h1 {
   margin-top: 8rem;
+  font-weight: bold;
 }
 
 .headertop{
   background-color:white;
+}
+
+.headertop{
+  display:flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+
+}
+
+.headertop>div:nth-of-type(2){
+  text-align: center;
+}
+.headertop a{
+  color: #84a37e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.headertop a:hover{
+  color: #395870;
 }
 
 .common-button{
