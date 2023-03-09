@@ -1,20 +1,28 @@
 .about-introduction{
-  height: 60vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  margin:0
+  margin:0;
 }
 
 .introduction-background{
   background-image: url("../images/reditems.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  filter:brightness(80%);
+  filter:brightness(90%);
   margin-top: -15rem;
   height: 100%;
   width: 100%;
   z-index: -1;
   position: fixed;
+}
+
+.introduction-foreground{
+  text-align: center;
+}
+
+.logo{
+  margin:0;
 }
 
 .extra{
@@ -24,20 +32,25 @@
 }
 
 .about-introduction p{
-  margin-left:15rem ;
-  margin-right: 15rem;
+  padding: 0rem;
+  margin-left:20rem ;
+  margin-right: 20rem;
   color:white;
   text-align: center;
   z-index: 2;
+  margin-top: 0;
 }
 
 .about-introduction h1{
   color:white;
+  padding: 1rem;
   text-align: center;
   z-index: 2;
+  margin-top: 0;
 }
 
 .about-details{
+
   margin-bottom: 0px;
   justify-content: center;
   background-color:white;
@@ -47,10 +60,10 @@
 }
 
 .about-details p{
-  margin-left:15rem ;
-  margin-right: 15rem;
+  margin-left:20rem ;
+  margin-right: 20rem;
   text-align: center;
-  margin:0;
+  padding: 0rem;
 }
 
 .about-locations{
@@ -130,3 +143,10 @@ input[type=text]{
 .letter-btn:hover{
   border: 0.25rem solid #df2c4d;
 }
+
+@media screen and (max-width:850px){
+  .introduction-background{
+    margin-top: -29rem;
+  }
+}
+  
