@@ -72,20 +72,15 @@
   margin-top: 20px;
 }
 
-.about-newsletter{
-  margin:0;
-  background-color: white;
-  height:20rem;
-  width:100%;
-}
-
 .newsletter h2{
   text-align: center;
   font-weight: 30;
   font-size: 2rem;
 }
 
-.about-newsletter{
+.newsletter{
+  display:flex;
+  flex-wrap:wrap;
   margin:0;
   background-color: white;
   height:20rem;
@@ -96,15 +91,17 @@
 
 .newsletter-box{
   display:flex;
+  width:30rem;
 }
 
 input[type=text]{
-  margin-top:0.5rem;
+  margin-top:1rem;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 30%;
+  width: 75%;
   margin-bottom:0.5rem;
+  height:4rem;
 }
 
 .letter-box{
@@ -112,6 +109,7 @@ input[type=text]{
   display:flex;
   flex-wrap:wrap;
   flex-direction: row;
+  width: 100%;
   justify-content:center;
 }
 
@@ -126,7 +124,7 @@ input[type=text]{
   border-radius: 0;
   color:#000000;
   background-color: #ffffff;
-  height:75%;
+  height:4rem;
 }
 
 .letter-btn:hover{

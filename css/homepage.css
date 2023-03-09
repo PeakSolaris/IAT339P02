@@ -2,14 +2,6 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h1 {
-  font-family: "Lato", sans-serif;
-  padding: 4rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
 h2 {
   margin-top: 6rem;
   font-size: 3em;
@@ -24,7 +16,7 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-p{
+.row p{
   margin-bottom: 0.5rem;
   text-align: center;
 }
@@ -118,4 +110,3 @@ p{
   padding: 1%;
   gap: 0.2rem;
 }
-

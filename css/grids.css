@@ -10,7 +10,7 @@
   display:flex;
   flex-wrap:wrap;
   flex-direction: row;
-  justify-content:center;
+  justify-content:space-around;
   min-height: 100%;
 }
 /*
@@ -19,12 +19,16 @@ Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/
 */
 
 .block{
-  height: 32em;
+  height: auto;
   width: 20em;
   margin-left: 3rem;
   margin-right: 3rem; 
   margin-top: 20px;
   margin-bottom: 20px; 
+}
+
+.block img{
+  width:100%;
 }
   
 .container .block p {
@@ -54,6 +58,11 @@ Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/
 
 .product_listing{
   margin:2rem;
+}
+
+.product_listing select{
+  width: 20%;
+
 }
 
 /*
