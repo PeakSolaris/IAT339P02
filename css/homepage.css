@@ -1,6 +1,5 @@
 body {
   font-family: "Lato", sans-serif;
-  padding: 2rem;
 }
 
 h1 {
@@ -39,6 +38,11 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin:2rem;
+}
+
+.headertop{
+  background-color:white;
 }
 /*Footer section start*/
 .site-footer {

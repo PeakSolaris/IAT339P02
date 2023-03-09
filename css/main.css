@@ -10,14 +10,11 @@
 }
 body {
   font-family: "Lato",sans-serif;
-  padding: 2rem;
   overflow-x:hidden;
+  margin:0;
 }
 
-
-
 /*Add space between <section> elements.*/
-
 section {
   margin: 4rem 0;
 }
@@ -201,7 +198,6 @@ input:focus{
   background-color: #84a37e;
   display: flex;
   justify-content: space-between;
-  background-color: #84a37e;
 }
 
 .topbanner .logo{
@@ -272,7 +268,8 @@ li a:hover:not(.active) {
 }
 .card_desing_prduct{
   display: flex;
-  justify-content:center
+  margin:2rem;
+  justify-content:center;
 }
 .itemimg {width: 100%;}
 .iteminfo { text-decoration: none; }
