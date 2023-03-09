@@ -95,6 +95,12 @@ code {
     border: 1px solid black;
 }
 
+.element{
+  flex:100%;
+  justify-content:center;
+  display:flex;
+}
+
 /*Add a different hover and focus state styling to the image as a link.*/
 
 .imgshow {
@@ -160,7 +166,7 @@ form {
 /*Style the <input> and <label>*/
 
 input {
-  border-radius: 15px;
+  border-radius: 0.75rem;
   font: 14px/1.4 "Poppins",sans-serif;
   font-weight: 60;
 }
@@ -256,17 +262,44 @@ li a:hover:not(.active) {
     
   }
 
-
   .topbanner ul{
     flex-direction: column;
   }
 
-  .flex-box{
+  .card_desing_prduct{
     flex-direction: column;
+  }
+
+  .paymentform{
+    flex-direction: column;
+  }
+
+  .shoppingCart{
+    flex-direction: column;
+  }
+
+  .flex-box{
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .colour{
+    text-align: center;
+  }
+  
+  .quantity{
+    text-align: center;
+  }
+
+  .btn-box{
+    justify-content: center;
   }
   
 }
 .card_desing_prduct{
+  width:auto;
   display: flex;
   margin:2rem;
   margin-right: 0;
@@ -319,13 +352,6 @@ li a:hover:not(.active) {
   border:1px solid #df2c4d;
 }
 
-@media screen and (max-width:850px){
-  .card_desing_prduct{
-    flex-direction: column;
-  }
-  
-}
-
 .paymentform{
   display: flex;
   flex-direction: column;
@@ -358,16 +384,21 @@ input[type=text]{
   margin-top:0.5rem;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 90%;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+
+input[type=text]:hover{
+  border:2px solid #84a37e;
+  cursor:pointer;
 }
 
 input[type=number]{
   margin-top:0.5rem;
   padding: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 90%;
+  border-radius: 0.75rem;
+  width:100%;
 }
 
 input[type=checkbox]{
@@ -383,15 +414,6 @@ input[type=checkbox]{
 .paymentform input:focus{
   border-color: rgb(45, 91, 216);
   border-width: 2px;
-}
-
-
-
-@media screen and (max-width:850px){
-  .paymentform{
-    flex-direction: column;
-  }
-  
 }
 
 .shoppingCart{
@@ -443,13 +465,6 @@ input[type=checkbox]{
 
 .change-delivery:hover{
   color:#df2c4d;
-}
-
-@media screen and (max-width:850px){
-  .shoppingCart{
-    flex-direction: column;
-  }
-  
 }
 
 .footer{
@@ -523,19 +538,22 @@ Earring Product Page Styling
 */
 
 .flex-box{
+  max-width: 1100px;
+  margin:auto;
   display:flex;
-  width:64rem;
   margin: 1rem auto;
   margin-top:3rem;
+  flex-direction: row;
 }
 
 .left{
-  width:70%;
+  flex:100%;
+  max-width:70%;
+  box-sizing:border-box;
+  justify-content: center;
+  margin-left: 3rem;
 }
 
-.right{
-  padding: 0.5rem 1.75rem 1.05rem 1.75rem ;
-}
 
 .images{
   display:flex;
@@ -564,7 +582,7 @@ Earring Product Page Styling
   padding: 1rem;
   border: 0.1rem solid #ccc;
   border-radius: 0.75rem;
-  width: 10%;
+  width: 25%;
   height: .5%;
 }
 
@@ -580,6 +598,14 @@ Earring Product Page Styling
   margin-top:3.125rem;
 }
 
+.inner select{
+  width:20%;
+}
+
+.colour select{
+  width: 25%;
+}
+
 .ratings i{
   color: red;
 }
@@ -588,10 +614,6 @@ Earring Product Page Styling
   font-size:1.25rem;
   font-weight:500;
   margin: 1.25rem 0;
-}
-
-.colour{
-  align-items:center;
 }
 
 .prodcolour p{
@@ -679,37 +701,26 @@ Contact Us Page
 }
 
 select{
-  border-radius: 0.9375rem;
+  margin-top:0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  width:100%;
+  height: .5%;
   font: 14px/1.4 "Poppins",sans-serif;
   font-weight: 60;
+  /*
+  border-radius: 0.9375rem;
+  */
 }
 
 .customerinfo{
   margin-top:.5rem;
 }
 
-.contactinfo select{
-  margin-bottom:.25rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  height:3.5rem;
-  width:90%;
-  font: 14px/1.4 "Poppins",sans-serif;
-  font-weight: 60;
-}
-
 .comment input{
   height:5rem;
 }
-
-.rightinfo{
-  padding-left: 1rem;
-  padding-top: 2rem;
-  width:47.25%;
-  height:32.4rem;
-}
-
 
 .headertop{
   display:flex;
@@ -731,15 +742,49 @@ select{
   color: #395870;
 }
 
-
-
-
-
-
 /*
 Source used for colour demo box:
 Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from https://www.thesitewizard.com/css/create-coloured-box.shtml
 
 Source used for float left:
 Applying color to HTML elements using CSS. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color
+*/
+
+/* PASSWORD PROTECTED PART ------------*/
+/* style the popup container */
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* show the popup when it has the "show" class */
+#popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* style the close button */
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+
+/*
+Source for pop up:
+  Timed alert box pop up for website? [duplicate]. (2014). Retrieved from https://stackoverflow.com/questions/16836075/timed-alert-box-pop-up-for-website
+  How to - CSS/JS modal. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0
+  How to - Popup. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_popup.asp
 */

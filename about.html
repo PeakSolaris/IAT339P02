@@ -40,6 +40,36 @@
       </div>
     </header>
 
+    <div id="popup">
+      <img src="images/news.png" width="500" height="500" alt="Popup Image">
+      <button id="popup-close">X</button>
+    </div>
+  
+    <script> 
+      // get references to the popup and close button
+      const popup = document.getElementById("popup");
+      const closeButton = document.getElementById("popup-close");
+
+      // add a click event listener to the close button
+      closeButton.addEventListener("click", function() {
+        popup.classList.remove("show");
+      });
+
+      // add a load event listener to the window
+      window.addEventListener("load", function() {
+        // add the "show" class to the popup after 2 seconds (2000 milliseconds)
+        setTimeout(function() {
+          popup.classList.add("show");
+        }, 1000);
+      });
+      /*
+      Source used for pop up:
+        Timed alert box pop up for website? [duplicate]. (2014). Retrieved from https://stackoverflow.com/questions/16836075/timed-alert-box-pop-up-for-website
+        How to - CSS/JS modal. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0
+        How to - Popup. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_popup.asp
+      */
+    </script>
+
     <section class="extra">
     </section>
 
@@ -50,6 +80,7 @@
           </div>
       
           <div class="introduction-foreground">
+            <img class="logo" src="images/cake.png" width="200" height="200"alt="Cocomolo logo">
             <h1> About <br> Cocomolo </h1>
             <p>
               We are a boutique accessories company that takes pride in handcrafting an extensive collection of earrings, bracelets, and phone accessories. At our core, we are committed to sustainability and offer a range of products that are not only environmentally friendly but also eye-catching. Our products are inspired by retro styles and bursting with vibrant colors, making them truly one-of-a-kind pieces that you won't find anywhere else.
@@ -99,7 +130,9 @@
       <div class="row">
           <div class="col-sm-12 col-md-6">
           <h6>Cocomolo.com</h6>
-          <p>3277 St.Pual Street | St.Martin, BC | 604-777-7777</p>
+          <p>4151 Hazelbridge Way #2360| Richmond, BC | BC V6X 4J7</p>
+          <p>4700 Kingsway | Burnaby, BC | BC V5H 4M5</p>
+          <p>(778) 881-1986</p>
           <p class="text-justify">hello@shopcocomolo.com</p>
           </div>
       </div>

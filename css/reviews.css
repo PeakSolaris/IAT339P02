@@ -75,6 +75,11 @@
   padding:30px;
 }
 
+.review-text{
+  background:#dce7d9;
+  padding:30px;
+}
+
 .star{
   color:#df2c4d;
 }
@@ -89,6 +94,7 @@
   }
 
   .down-arrow{
+    margin-left:3rem;
     display:block;
   }
 
@@ -134,3 +140,140 @@
   Source used for customer review styling:
   DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. https://www.youtube.com/watch?v=zkyIVFoLxgY
 */
+
+
+/* Comment Section ----------------*/
+.stars{
+  width:400px;
+  padding:20px 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.stars input{
+  display:none
+}
+
+.stars label{
+  font-size:40px;
+  color:#444;
+  padding:10px;
+  float:right;
+}
+
+.stars input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #df2c4d;
+}
+
+input:checked ~label{
+  color:#df2c4d;
+}
+
+input#rate-5:checked ~label{
+  color:#df2c4d;
+  text-shadow: 0 0 20 px #952;
+}
+
+/*
+Source used for interactive stars
+DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. Retrieved from https://www.youtube.com/watch?v=zkyIVFoLxgY
+  CodingNepal. (2020, June 18). Star rating system in HTML CSS & JavaScript | CodingNepal [Video]. Retrievwd from https://www.youtube.com/watch?v=rw3eZ6XodN8
+*/
+/* Image Upload Section ----------------*/
+.plus-box {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.plus-box span {
+  display: block;
+}
+
+.plus-box:hover{
+  border:none;
+  border:2px solid #84a37e;
+  cursor:pointer;
+}
+
+.plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+textarea{
+  width: 100%;
+  font-size:1rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+  height:100%;
+  border-radius: 15px;
+  font: 14px/1.4 "Poppins",sans-serif;
+  font-weight: 60;
+}
+
+textarea:hover{
+  border:2px solid #84a37e;
+
+}
+
+.review-text p{
+  font-weight: bold;
+  margin-bottom:0.5rem ;
+}
+
+.rate-product p{
+  font-weight: bold;
+  margin-bottom:0.5rem ;
+}
+.review-submit{
+  margin-top: 1rem;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+
+.review-btn{
+  border: 0.25rem solid #84a37e;
+  margin-right:1rem;
+}
+
+.review-submit input{
+  font-size:rem;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+  height:100%;
+}
+
+.review-btn:hover{
+  border: 0.25rem solid #df2c4d;
+}
+
+.comment-details{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-name{
+  font-size:22px;
+  font-weight:600;
+  margin-top:0rem;
+}
