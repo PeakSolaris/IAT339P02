@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+    <title>Review</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/reviews.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="headertop">
+            <div><a href="#">FIND A STORE</a></div>
+            <div><a href="homepage.html">COCOMOLO</a></div>
+            <div>
+                <a href="#">SEARCH</a>
+                <a href="#">SIGN IN</a>
+                <a href="checkout.html">CART</a>
+            </div>
+        </div>
+        <div class="topbanner">
+            <div class="mobile-icon"><i class=""></i></div>
+            <ul>
+                <li><a href="productlist.html">Products</a></li>
+                <li><a href="bestsellers.html">Best Sellers</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+      </div>
+    </header>
+
+    <section class ="product-details">
+      <div class="flex-box">
+        <div class="left">
+          <div class="big-img">
+            <img src="images/earring3.jpg" width="400" height="450" alt="prodctimg">
+          </div>
+        </div>
+        <!--
+          Heart earring image source #1 (earring3.jpg):
+          Cocomolo. (2020). Retrieved from https://www.facebook.com/photo/?fbid=919211918544548&set=pb.100036786325592.-2207520000
+          -->
+  
+        <div class="left">
+          <div class="product-name">Clip-on Dangling Heart Earrings</div>
+          <h3 class="subtitle">Color: pink</h3>
+          <div><h3 class="subtitle">––––––––</h3></div>
+
+          <div class="rate-product"><p>Rate this Product</p></div>
+
+          <div class="comment">
+            <div class="stars">
+              <input type="radio" name="rate" id="rate-5">
+              <label for="rate-5" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-4">
+              <label for="rate-4" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-3">
+              <label for="rate-3" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-2">
+              <label for="rate-2" class="fas fa-star"></label>
+              <input type="radio" name="rate" id="rate-1">
+              <label for="rate-1" class="fas fa-star"></label>
+            </div>        
+          </div>
+
+          <script>
+            const stars = document.querySelectorAll(".star");
+    
+            for (let i = 0; i < stars.length; i++) {
+              stars[i].addEventListener("click", function() {
+                for (let j = 0; j < stars.length; j++) {
+                  if (j >= i) {
+                    stars[j].classList.add("active");
+                  } else {
+                    stars[j].classList.remove("active");
+                  }
+                }
+              });
+            }
+    
+            </script>  
+
+            <div class="review-text">
+              <p>Review</p>
+              <textarea type="form-comment" placeholder="Example: After using the se clip-on earrings, I love how they don't hurt my ears at all! I can easily adjust the size and it’s comfortable to wear. The quality of these earrings is great and…"></textarea>
+            </div>
+
+            <div><h3 class="subtitle">––––––––</h3></div>
+
+            <div class="review-text">
+              <p>Headline</p>
+              <textarea type="form-comment" placeholder="Example: A must-have accessory!"></textarea>
+            </div>
+
+            <div><h3 class="subtitle">––––––––</h3></div>
+
+            <div class="review-text">
+              <p>Upload Image</p>
+              <div class="plus-box" data-img="">
+                <span class="plus">+</span>
+                <input type="file" id="file-input" accept="image/*" style="display: none;">
+              </div>
+            </div>
+
+            <div class="review-submit">
+              <a href="homepage.html"><input  class = "review-btn" type="submit" value="Submit"></a>
+            </div>
+
+            <script>
+
+              const plusBox = document.querySelector('.plus-box');
+              const fileInput = document.getElementById('file-input');
+
+              plusBox.addEventListener('click', function() {
+                fileInput.click();
+              });
+
+              fileInput.addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                console.log(image);
+                const reader = new FileReader();
+              });
+
+              /*
+              Source used for uploading image:
+              Fajar Std. (2021, November 2). Upload image With preview image | HTML CSS Javascript [Video]. Retrieved from https://www.youtube.com/watch?v=Uo9Jme8IwlM
+              */
+            </script>
+
+        </div>
+  
+      </div>
+      
+
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
+          <h6>Cocomolo.com</h6>
+          <p>4151 Hazelbridge Way #2360| Richmond, BC | BC V6X 4J7</p>
+          <p>4700 Kingsway | Burnaby, BC | BC V5H 4M5</p>
+          <p>(778) 881-1986</p>
+          <p class="text-justify">hello@shopcocomolo.com</p>
+          </div>
+      </div>
+      </div>
+  
+      <div class="container">
+      <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+              <div class="socialmediaicons">
+                  <a href="https://www.facebook.com/cocomolo.official"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/cocomolo_official/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.pinterest.ca/pin/583145851740484017/"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+              <a href="#">Cocomolo</a>.
+          </p>
+          </div>
+      </div>
+      </div>
+  </footer>
+
+</body>
