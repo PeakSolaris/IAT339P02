@@ -1,0 +1,134 @@
+.about-introduction{
+  height: 60vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:0
+}
+
+.introduction-background{
+  background-image: url("../images/reditems.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:brightness(80%);
+  margin-top: -15rem;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.extra{
+  margin:0;
+  height:3rem;
+  background-color: white;
+}
+
+.about-introduction p{
+  margin-left:15rem ;
+  margin-right: 15rem;
+  color:white;
+  text-align: center;
+  z-index: 2;
+}
+
+.about-introduction h1{
+  color:white;
+  text-align: center;
+  z-index: 2;
+}
+
+.about-details{
+  margin-bottom: 0px;
+  justify-content: center;
+  background-color:white;
+  text-align: center;
+  z-index: 3;
+  height: 50vh;
+}
+
+.about-details p{
+  margin-left:15rem ;
+  margin-right: 15rem;
+  text-align: center;
+  margin:0;
+}
+
+.about-locations{
+  min-height: 100%;
+  flex-wrap:wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.block{
+  height: 32em;
+  width: 20em;
+  margin-left: 3rem;
+  margin-right: 3rem; 
+  margin-top: 20px;
+}
+
+.about-newsletter{
+  margin:0;
+  background-color: white;
+  height:20rem;
+  width:100%;
+}
+
+.newsletter h2{
+  text-align: center;
+  font-weight: 30;
+  font-size: 2rem;
+}
+
+.about-newsletter{
+  margin:0;
+  background-color: white;
+  height:20rem;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.newsletter-box{
+  display:flex;
+}
+
+input[type=text]{
+  margin-top:0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+  margin-bottom:0.5rem;
+}
+
+.letter-box{
+  margin-top: 1rem;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.letter-btn{
+  border: 0.25rem solid #84a37e;
+  margin-right:1rem;
+}
+
+.letter-box input{
+  font-size:1rem;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+  height:75%;
+}
+
+.letter-btn:hover{
+  border: 0.25rem solid #df2c4d;
+}
