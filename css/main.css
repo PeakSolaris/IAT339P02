@@ -597,6 +597,10 @@ Earring Product Page Styling
   margin-top:3.125rem;
 }
 
+.inner select{
+  width:20%;
+}
+
 .colour select{
   width: 25%;
 }
@@ -700,7 +704,7 @@ select{
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 0.75rem;
-  width: 100%;
+  width:100%;
   height: .5%;
   font: 14px/1.4 "Poppins",sans-serif;
   font-weight: 60;
