@@ -46,20 +46,6 @@ h4 {
   background-color:white;
 }
 
-.headertop{
-  display:flex;
-  justify-content: space-around;
-  padding: 0.5rem;
-
-}
-
-.headertop .mobile-icon{
-  display: none;
-}
-
-.headertop .mobile-icon .fa-bars{
-  font-size: 1.2rem;
-}
 
 .headertop>div:nth-of-type(2){
   text-align: center;
@@ -72,6 +58,10 @@ h4 {
 
 .headertop a:hover{
   color: #395870;
+}
+
+.menuStyle{
+  display:block;
 }
 
 .common-button{
@@ -147,17 +137,7 @@ h4 {
   gap: 0.2rem;
 }
 
-@media screen and (max-width:850px){
-  .introduction-background{
-    margin-top: -29rem;
-  }
-
-  .headertop .mobile-icon{
-    display: block;
-  }
-
-  .headertop>div:nth-of-type(2){
-    display: none;
-  }
-}
+/* @media screen and (max-width:850px){
   
+}
+   */

@@ -248,6 +248,22 @@ li a:hover:not(.active) {
   background-color: #df2c4d;
 }
 
+.headertop{
+  display:flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+
+}
+
+.headertop .mobile-icon{
+  display: none;
+}
+
+.headertop .mobile-icon .fa-bars{
+  font-size: 1.2rem;
+}
+
+
 @media screen and (max-width:850px){
   .topbanner{
     display: none;
@@ -265,6 +281,17 @@ li a:hover:not(.active) {
     flex-direction: column;
   }
 
+  .introduction-background{
+    margin-top: -29rem;
+  }
+
+  .headertop .mobile-icon{
+    display: block;
+  }
+
+  .headertop>div:nth-of-type(2){
+    display: none;
+  }
   .card_desing_prduct{
     flex-direction: column;
   }
