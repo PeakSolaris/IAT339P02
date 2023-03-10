@@ -323,6 +323,10 @@ li a:hover:not(.active) {
     justify-content: center;
   }
   
+  .common-button{
+    width: 6rem;
+  }
+  
 }
 .card_desing_prduct{
   width:auto;
