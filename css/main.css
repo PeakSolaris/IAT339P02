@@ -250,8 +250,7 @@ li a:hover:not(.active) {
 
 @media screen and (max-width:850px){
   .topbanner{
-    flex-direction: column;
-    padding: 1rem;
+    display: none;
   }
 
   .topbanner .logo{

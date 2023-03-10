@@ -53,6 +53,14 @@ h4 {
 
 }
 
+.headertop .mobile-icon{
+  display: none;
+}
+
+.headertop .mobile-icon .fa-bars{
+  font-size: 1.2rem;
+}
+
 .headertop>div:nth-of-type(2){
   text-align: center;
 }
@@ -142,6 +150,14 @@ h4 {
 @media screen and (max-width:850px){
   .introduction-background{
     margin-top: -29rem;
+  }
+
+  .headertop .mobile-icon{
+    display: block;
+  }
+
+  .headertop>div:nth-of-type(2){
+    display: none;
   }
 }
   
