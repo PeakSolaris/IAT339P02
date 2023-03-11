@@ -42,7 +42,7 @@ html {
   color: black;
 }
 
-a:hover {
+.introduction a:hover {
   color: #df2c4d;
 }
 
