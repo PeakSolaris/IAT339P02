@@ -673,26 +673,9 @@ Earring Product Page Styling
   font-weight: 60;
 }
 
-.btn-box{
-  display:flex;
-  margin-top:2rem;
-}
-.cart-box{
-  display:flex;
-  margin-top:4rem;
-}
-
 .cart-box input{
   font-size:1rem;
   padding: 1rem 5.4rem;
-  border-radius: 0;
-  color:#000000;
-  background-color: #ffffff;
-}
-
-.btn-box input{
-  font-size:1rem;
-  padding: 1rem 5rem;
   border-radius: 0;
   color:#000000;
   background-color: #ffffff;
@@ -703,17 +686,10 @@ Earring Product Page Styling
   margin-right:1rem;
 }
 
-.buy-btn{
-  border: 0.25rem solid #1b4f11;
-}
-
 .cart-btn:hover{
   border: 0.25rem solid #df2c4d;
 }
 
-.buy-btn:hover{
-  border: 0.25rem solid #df2c4d;
-}
 
 /*
   Source used for earring product page styling:
