@@ -300,10 +300,6 @@ li a:hover:not(.active) {
     flex-direction: column;
   }
 
-  /* .paymentform{
-    display: flex;
-    flex-direction: column;
-  } */
 
   .shoppingCart{
     flex-direction: column;
@@ -337,6 +333,7 @@ li a:hover:not(.active) {
   }
   
 }
+
 .card_desing_prduct{
   width:auto;
   display: flex;
@@ -359,7 +356,6 @@ li a:hover:not(.active) {
 .crd_img {
   width: 100%;
   overflow: hidden;
-  /* margin: -10px 0 0 -10px; */
   transform: translate(-10px,-10px);
   transition: all 0.5s ease-in-out 0s;
 }
@@ -392,8 +388,6 @@ li a:hover:not(.active) {
   border-width: 3px;
   border:1px solid #df2c4d;
 }
-
-
 
 
 
@@ -690,7 +684,7 @@ Earring Product Page Styling
   font-weight: 60;
 }
 
-<<<<<<< HEAD
+
 .btn-box{
   display:flex;
   margin-top:2rem;
@@ -700,8 +694,6 @@ Earring Product Page Styling
   margin-top: 1rem;
 }
 
-=======
->>>>>>> master
 .cart-box input{
   font-size:1rem;
   padding: 1rem 5.4rem;
