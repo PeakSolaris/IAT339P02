@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
-    <script src="javascript/script.js"></script>
-    <title>Cocomolo - Checkout Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+  <title>Cocomolo - Checkout Cart</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/homepage.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/homepage.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <div class="headertop">
-          <div class="mobile-icon"  onclick="toggleMenu()"><a href="javascript:void"><i class="fa-solid fa-bars"></i></a></div>
-          <div><a href="#">FIND A STORE</a></div>
-          <div><a href="homepage.html">COCOMOLO</a></div>
-          <div>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a href="#"><i class="fa-solid fa-user"></i></a>
-              <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
-          </div>
+  <header>
+    <div class="headertop">
+      <div class="mobile-icon" onclick="toggleMenu()"><a href="javascript:void"><i class="fa-solid fa-bars"></i></a>
       </div>
-      <div class="topbanner">
-          <div class="mobile-icon"><i class=""></i></div>
-          <ul>
-              <li><a href="homepage.html">Home</a></li>
-              <li><a href="productlist.html">Products</a></li>
-              <li><a href="bestsellers.html">Best Sellers</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="contactus.html">Contact Us</a></li>
-          </ul>
+      <div><a href="#">FIND A STORE</a></div>
+      <div><a href="homepage.html">COCOMOLO</a></div>
+      <div>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
       </div>
+    </div>
+    <div class="topbanner">
+      <div class="mobile-icon"><i class=""></i></div>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="productlist.html">Products</a></li>
+        <li><a href="bestsellers.html">Best Sellers</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
   </header>
 
-    <section class="element">
+  <section class="element">
     <div class="shoppingCart">
-      <div class="cartimg"><img src="images/earring.jpg" width="500" height="550" alt="prodctimg"></div>
+      <div class="cartimg"><img src="images/earring.jpg" alt="prodctimg"></div>
       <div class="bag-total">
         <div class="itemtitle">
           <p class="itemname">Heart Dangle Earrings</p>
@@ -63,68 +64,68 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
 
-    <section class="element">
+  <section class="element2">
 
-        <div class="paymentform">
-          <div class="paymentmethod">
-            <div class="billingaddress">
-            <h2 class="paymenttitle">Billing Address</h2>
-            <div class="paymentinfo"> Full Name</div>
-            <input type="text" class="paymentinfoinput" id="fname" name="fullname" placeholder="Jean Doe">
-            <div class="paymentinfo"> Email</div>
-            <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
-            <div class="paymentinfo"> Address</div>
-            <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
-            <div class="paymentinfo"> City</div>
-            <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
-          </div>
-          <div class="payment">
-            <h2 class="paymenttitle">Payment</h2>
-            <div class="paymentinfo">Name on Card</div>
-            <input type="text" class="paymentinfoinput" id="cname" name="cardname">
-            <div class="paymentinfo">Credit card number</div>
-            <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
-            <div class="paymentinfo">Exp Date</div>
-            <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
-            <div class="paymentinfo">CVV</div>
-            <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
-          </div>
+    <div class="paymentform">
+      <div class="paymentmethod">
+        <div class="billingaddress">
+          <h2 class="paymenttitle">Billing Address</h2>
+          <div class="paymentinfo"> Full Name</div>
+          <input type="text" class="paymentinfoinput" id="fname" name="fullname" placeholder="Jean Doe">
+          <div class="paymentinfo"> Email</div>
+          <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
+          <div class="paymentinfo"> Address</div>
+          <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
+          <div class="paymentinfo"> City</div>
+          <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
         </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-          <input type="submit" value="COMFIRMING ORDER" class="button-nav">
-          </div>
-    </section>
+        <div class="payment">
+          <h2 class="paymenttitle">Payment</h2>
+          <div class="paymentinfo">Name on Card</div>
+          <input type="text" class="paymentinfoinput" id="cname" name="cardname">
+          <div class="paymentinfo">Credit card number</div>
+          <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+          <div class="paymentinfo">Exp Date</div>
+          <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
+          <div class="paymentinfo">CVV</div>
+          <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
+        </div>
+      </div>
+      <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <input type="submit" value="COMFIRMING ORDER" class="button-nav">
+    </div>
+  </section>
 
-    <footer class="site-footer">
-      <div class="container">
+  <footer class="site-footer">
+    <div class="container">
       <div class="row">
-          <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6">
           <h6>Cocomolo.com</h6>
           <p>4151 Hazelbridge Way #2360| Richmond, BC | BC V6X 4J7</p>
           <p>4700 Kingsway | Burnaby, BC | BC V5H 4M5</p>
           <p>(778) 881-1986</p>
           <p class="text-justify">hello@shopcocomolo.com</p>
-          </div>
+        </div>
       </div>
-      </div>
+    </div>
 
-      <div class="container">
+    <div class="container">
       <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-              <div class="socialmediaicons">
-                  <a href="https://www.facebook.com/cocomolo.official"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/cocomolo_official/"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="https://www.pinterest.ca/pin/583145851740484017/"><i class="fa-brands fa-pinterest"></i></a>
-              </div>
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-              <a href="#">Cocomolo</a>.
-          </p>
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <div class="socialmediaicons">
+            <a href="https://www.facebook.com/cocomolo.official"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cocomolo_official/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.pinterest.ca/pin/583145851740484017/"><i class="fa-brands fa-pinterest"></i></a>
           </div>
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+            <a href="#">Cocomolo</a>.
+          </p>
+        </div>
       </div>
-      </div>
+    </div>
   </footer>
-  </body>
+</body>

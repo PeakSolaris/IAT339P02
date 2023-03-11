@@ -82,9 +82,9 @@ h4 {
   border-radius: 5px;
 }
 
-.common-button a:hover, .common-button a:focus{
+.common-button:hover, .common-button:focus{
  font-weight: bold;
- border: 1px solid #1b4f11;
+ background-color:  #1b4f11;
 }
 
 /*Footer section start*/

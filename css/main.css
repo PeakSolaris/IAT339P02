@@ -96,9 +96,13 @@ code {
 }
 
 .element{
-  flex:100%;
-  justify-content:center;
-  display:flex;
+    margin: 1rem; 
+}
+
+.element2{
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 4rem;
 }
 
 /*Add a different hover and focus state styling to the image as a link.*/
@@ -296,9 +300,10 @@ li a:hover:not(.active) {
     flex-direction: column;
   }
 
-  .paymentform{
+  /* .paymentform{
+    display: flex;
     flex-direction: column;
-  }
+  } */
 
   .shoppingCart{
     flex-direction: column;
@@ -309,6 +314,10 @@ li a:hover:not(.active) {
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+  }
+
+  .paymentmethod{
+    flex-direction: column;
   }
 
   .colour{
@@ -338,12 +347,11 @@ li a:hover:not(.active) {
 .itemimg {width: 100%;}
 .iteminfo { text-decoration: none; }
 
-
 .itemCard {
   background-color: #84a37e;
   width: 300px;
   border:1px solid #84a37e;
-  margin: 0 30px 40px 0;
+  margin: 0 2rem;
   transition: all 0.5s ease-in-out 0s;
   flex: 1;
 }
@@ -351,7 +359,8 @@ li a:hover:not(.active) {
 .crd_img {
   width: 100%;
   overflow: hidden;
-  margin: -10px 0 0 -10px;
+  /* margin: -10px 0 0 -10px; */
+  transform: translate(-10px,-10px);
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -373,21 +382,27 @@ li a:hover:not(.active) {
   margin-top: 10px;
   transition: all 0.5s ease-in-out 0s;
 }
+
 .itemCard:hover .crd_img { 
-   margin: 0;
+   transform: translate(0px,0px);
 }
 
-.itemCard:hover {
-  background-color: #df2c4d; border-width: 3px;
+.itemCard:hover, .itemCard:focus {
+  background-color: #df2c4d; 
+  border-width: 3px;
   border:1px solid #df2c4d;
 }
+
+
+
+
 
 .paymentform{
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 1rem;
   margin-top: 4rem;
-  max-width: 60rem;
+  
 }
 
 .paymentmethod{
@@ -395,9 +410,10 @@ li a:hover:not(.active) {
   justify-content: center;
 }
 
+
 .billingaddress,.payment{
   background-color: #e7e7e7;
-  padding: 1.5rem 1.75rem 2.5rem 3.75rem ;
+  padding: 1.5rem 1.75rem 2.5rem 1.75rem ;
   flex: 1;
 }
 
@@ -445,6 +461,7 @@ input[type=checkbox]{
   border-color: rgb(45, 91, 216);
   border-width: 2px;
 }
+
 
 .shoppingCart{
   display: flex;
@@ -679,7 +696,7 @@ Earring Product Page Styling
 }
 .cart-box{
   display:flex;
-  margin-top:4rem;
+  margin-top: 1rem;
 }
 
 .cart-box input{
