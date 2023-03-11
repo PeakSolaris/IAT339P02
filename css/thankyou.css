@@ -1,0 +1,227 @@
+/* *{
+  border: 1px solid red;
+} */
+
+.about-introduction{
+  height: 30rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin:0;
+}
+
+.introduction-background{
+  background-image: url("../images/thankyou.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:brightness(90%);
+  margin-top: -15rem;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.introduction-foreground{
+  text-align: center;
+}
+
+.logo{
+  margin:0;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+.extra{
+  margin:0;
+  height:3rem;
+  background-color: white;
+}
+
+.about-introduction p{
+  padding: 0rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  color:white;
+  text-align: center;
+  z-index: 2;
+  margin-top: 0;
+}
+
+.about-introduction h1{
+  color:white;
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+  margin-top: 0;
+}
+
+.about-details{
+
+  margin-bottom: 0px;
+  justify-content: center;
+  background-color:white;
+  text-align: center;
+  z-index: 3;
+  /* height: 50vh; */
+}
+
+.about-details p{
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+
+}
+
+.about-buttons{
+  min-height: 100%;
+  flex-wrap:wrap; 
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-buttons .button-nav{
+  max-width: 10rem;
+}
+
+.button-box{
+  display: flex;
+  margin-top: 1rem;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content:center;
+}
+
+
+
+.button-box input{
+  flex: 1;
+  width: 100%;
+  margin: 0 1rem;
+  padding: 1rem 0rem;
+  height:4rem;
+}
+
+.button-box a{
+  text-align: center;
+}
+
+.block{
+  max-width: 20em;
+  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem; 
+  margin-top: 20px;
+}
+
+.block img{
+  width: 100%;
+}
+
+
+.newsletter h2{
+  text-align: center;
+  font-weight: 30;
+  font-size: 2rem;
+}
+
+.newsletter{
+  display:flex;
+  flex-wrap:wrap;
+  margin:0;
+  background-color: white;
+  height:20rem;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.newsletter-box{
+  display:flex;
+  
+}
+.newsletter-box .customer-email{
+  width: 90%;
+}
+.newsletter .letter-box{
+  width: 50%;
+}
+
+input[type=text]{
+  margin-top:1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 75%;
+  margin-bottom:0.5rem;
+  height:4rem;
+}
+
+.letter-box{
+  display: flex;
+  margin-top: 1rem;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content:center;
+}
+
+
+
+.letter-box input{
+  flex: 1;
+  width: 100%;
+  margin: 0 1rem;
+  padding: 1rem 0rem;
+  height:4rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:850px){
+  .introduction-background{
+    display: flex;
+    flex-direction: column;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
+  .block p{
+    max-width: 20rem;
+    text-align: center;
+  }
+
+  .newsletter h2{
+     font-size: 1.5rem; 
+  }
+
+}
+@media screen and (max-width:550px){
+  .newsletter-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter-box .customer-email{
+    width: 100%;
+  }
+  .newsletter .letter-box{
+    width: 100%;
+  }
+}
+  
