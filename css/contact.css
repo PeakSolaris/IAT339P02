@@ -1,0 +1,70 @@
+.contacttitle h1{
+    font-family: "Lato",sans-serif;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 30;
+  font-size:2rem;
+ 
+}
+
+.product-details{
+    margin: auto;
+}
+
+.big-img img{
+    width: 100%;
+    
+  }
+  
+  .flex-box{
+    max-width: 1200px;
+    margin:auto;
+    display:flex;
+    flex: 1;
+    margin-top:3rem;
+    margin-bottom: 2rem;
+  }
+
+
+  .right{
+    padding: 2rem;
+    width: 50%;
+  }
+  .left{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    /* box-sizing:border-box; */
+    
+  }
+
+  
+  .btn-box{
+    margin-top: 3rem;
+  }
+  
+  .btn-box input{
+    width: 100%;
+  }
+  
+
+  @media screen and (max-width:850px) {
+    .flex-box{
+        display: flex;
+        flex-direction: column;
+       
+      }
+
+      .left{
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 1rem;
+      }
+
+      .right{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    
+  }

@@ -1,0 +1,49 @@
+
+.colorscheme .colorplate1{
+    color: #EEE;
+    background-color: #333;
+  }
+  
+  .colorscheme .colorplate2{
+    background-color: #84a37e;
+  
+  }
+  .colorscheme .colorplate3{
+    background-color:#ffffff;
+  }
+  
+  .colorscheme .colorplate4{
+    background-color:#df2c4d;
+  }
+  
+  #greenbox {
+    float: left;
+    background-color: #84a37e ;
+    padding: 10px ;
+    border: 1px solid #000000 ;
+    width: 1px;
+  }
+  
+  #whitebox {
+    float: left;
+    background-color: #ffffff;
+    padding: 10px ;
+    border: 1px solid #000000 ;
+    width: 1px;
+  }
+  
+  #redbox {
+    float: left;
+    background-color: #df2c4d ;
+    padding: 10px ;
+    border: 1px solid #000000 ;
+    width: 1px;
+  }
+  
+  #blackbox {
+    float: left;
+    background-color: #000000 ;
+    padding: 10px ;
+    border: 1px solid #000000 ;
+    width: 1px;
+  }

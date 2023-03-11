@@ -84,6 +84,7 @@ h4 {
 
 .common-button:hover, .common-button:focus{
  font-weight: bold;
+ border:1px solid #1b4f11;
  background-color:  #1b4f11;
 }
 
