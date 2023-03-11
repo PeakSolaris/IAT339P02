@@ -146,7 +146,19 @@ input[type=text]{
 
 @media screen and (max-width:850px){
   .introduction-background{
-    margin-top: -29rem;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .block p{
+    width: 20rem;
+    text-align: center;
   }
 }
   
