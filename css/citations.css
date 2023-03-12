@@ -27,6 +27,7 @@ html {
 }
 
 .citations-left {
+
   width: 15%; 
   display: flex;
   margin: 1rem auto;
@@ -35,7 +36,12 @@ html {
   position: fixed;
 } 
 
+.citations-left h2{
+  font-size: 15px;
+}
+
 .citations-left a {
+  font-size: 10px;
   margin-bottom: 1rem;
   overflow: hidden;
   text-decoration: none;
@@ -47,10 +53,10 @@ html {
 }
 
 .citations-right {
+  
   margin-top: 3rem;
-  flex: 100%;
-  margin-left: 3rem;
-  margin-left: 30%;
+  margin-left: 20%;
+  
 }
 
 .image-container {
@@ -180,16 +186,18 @@ html {
   .citations-left {
     width: 100%;
     margin-left: 0;
-    padding:0;
+    padding:2;
     position: relative;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
+
+
   .citations-right{
-    margin-top: 3rem;
+    margin-top: 4rem;
     max-width: 100%;
-    justify-content: center;
-    margin-left: 0rem;
+   margin-left: 5%;
   }
 
   .citations-right h2{

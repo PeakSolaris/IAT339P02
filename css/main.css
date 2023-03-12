@@ -14,7 +14,7 @@ body {
   margin:0;
 }
 
-/*Add space between <section> elements.*/
+/*Add space between <section> s.*/
 section {
   margin: 4rem 0;
 }
@@ -660,6 +660,14 @@ Earring Product Page Styling
 }
 
 .btn-box input{
+  font-size:1rem;
+  padding: 1rem 5.4rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.btn-box2 input{
   font-size:1rem;
   padding: 1rem 5.4rem;
   border-radius: 0;
