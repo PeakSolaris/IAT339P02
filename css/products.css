@@ -16,6 +16,10 @@ html {
   flex-wrap: wrap;
 }
 
+form{
+  display: inline;
+}
+
 .block {
   max-width: 30%;
   min-width: 30%;

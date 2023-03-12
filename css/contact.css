@@ -10,6 +10,15 @@
     margin: auto;
 }
 
+form{
+  
+  margin: auto;
+}
+form .button-nav{
+  
+  margin: auto;
+  width: 100%;
+}
 
 
 .big-img img{
