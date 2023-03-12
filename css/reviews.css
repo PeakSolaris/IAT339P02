@@ -82,7 +82,7 @@
 .review-btn{
   border: 0.25rem solid #84a37e;
   background-color: white;
-  padding: 0,2rem,2rem,0;
+  padding: 0 2rem 2rem 0;
   
 }
 
@@ -237,7 +237,7 @@ input:checked ~label{
 
 input#rate-5:checked ~label{
   color:#df2c4d;
-  text-shadow: 0 0 20 px #952;
+  text-shadow: 0 0 20px #952;
 }
 
 /*
