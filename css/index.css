@@ -49,9 +49,9 @@ html {
   overflow-wrap: break-word;
 }
 
-<<<<<<< Updated upstream
-.index a:hover {
-=======
+
+
+
 ul{
 
   list-style: none;
@@ -68,10 +68,6 @@ ul{
   background-color: #84a37e;
 }
 
-.introduction a:hover {
->>>>>>> Stashed changes
-  color: #df2c4d;
-}
 
 .column-box{
   width:100%;
