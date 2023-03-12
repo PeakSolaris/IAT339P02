@@ -3,9 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
 .index-box {
  
   margin-left: 1rem;
@@ -49,9 +46,14 @@ html {
   overflow-wrap: break-word;
 }
 
-<<<<<<< Updated upstream
 .index a:hover {
-=======
+  color: #df2c4d;
+}
+
+ul{
+  list-style: none;
+}
+
 ul{
 
   list-style: none;
@@ -69,7 +71,6 @@ ul{
 }
 
 .introduction a:hover {
->>>>>>> Stashed changes
   color: #df2c4d;
 }
 
@@ -88,7 +89,7 @@ ul{
 
 .index-left {
   
-  width: 30%; 
+  width: 15%; 
   margin-left: 3rem;
   display: flex;
   
