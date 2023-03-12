@@ -95,9 +95,7 @@ code {
     border: 1px solid black;
 }
 
-.element{
-    margin: 1rem; 
-}
+
 
 .element2{
   max-width: 900px;
@@ -295,16 +293,23 @@ li a:hover:not(.active) {
   .headertop>div:nth-of-type(2){
     display: none;
   }
+
   .card_desing_prduct{
     flex-direction: column;
+    margin: auto;
+    justify-content:center;
+  }
+
+  .itemCard{
+    margin-bottom: 2rem;
   }
 
 
   .shoppingCart{
     flex-direction: column;
+   
   }
 
- 
 
   .paymentmethod{
     flex-direction: column;
@@ -322,24 +327,33 @@ li a:hover:not(.active) {
     justify-content: center;
   }
   
- 
   
 }
+
+
+/* .card_desing_prduct *{
+ border: 1px solid blue;
+} */
 
 .card_desing_prduct{
   width:auto;
   display: flex;
-  margin:2rem;
-  margin-right: 0;
+  margin: 3rem;
   justify-content:center;
 }
+
+
+.element{
+  margin: auto;
+}
+
+
+
 .itemimg {width: 100%;}
 .iteminfo { text-decoration: none; }
 
 .itemCard {
   background-color: #84a37e;
-  width: 300px;
-  border:1px solid #84a37e;
   margin: 0 2rem;
   transition: all 0.5s ease-in-out 0s;
   flex: 1;
@@ -370,6 +384,7 @@ li a:hover:not(.active) {
   margin-top: 10px;
   transition: all 0.5s ease-in-out 0s;
 }
+
 
 .itemCard:hover .crd_img { 
    transform: translate(0px,0px);

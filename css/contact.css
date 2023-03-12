@@ -30,6 +30,7 @@
     padding: 2rem;
     width: 50%;
   }
+  
   .left{
     display: flex;
     flex-direction: column;
