@@ -79,7 +79,6 @@
 }
 
 
-
 .review-btn{
   border: 0.25rem solid #84a37e;
   background-color: white;
@@ -100,6 +99,12 @@
 .review-submit input {
   
   padding: 1.5rem;
+}
+
+.comment {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width:100%;
 }
 
 .comment2 .border{
@@ -134,8 +139,25 @@
 
   .review-submit input{
     width: 100%;
-    padding: 0;
+    padding: 1rem;
 }
+
+.riv-img img{
+  margin-top: 0rem;
+
+}
+
+
+
+}
+
+
+.riv-img img{
+   margin-top: 8rem;
+    width: 100%;
+    
+}
+
 
 .review-submit a{
   font-size: 5px;
@@ -290,9 +312,23 @@ textarea:hover{
   flex-direction: row;
 }
 
-.review-submit input {
-  
+.review-btn{
+  border: 0.25rem solid #84a37e;
+  margin-right:1rem;
+}
+
+/* .review-submit input {
   padding: 1.5rem;
+  font-size:1rem;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+  height:100%;
+} */
+
+.review-btn:hover{
+  border: 0.25rem solid #df2c4d;
 }
 
 
@@ -308,4 +344,3 @@ textarea:hover{
   margin-top:0rem;
 }
 
-}
