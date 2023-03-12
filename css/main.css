@@ -142,7 +142,12 @@ code {
 
 .button-nav:hover, .button-nav:focus {
   border: #84a37e;
-  background-color: #1b4f11;;
+  background-color: #df2c4d;
+  cursor:pointer;
+}
+
+.button-nav a {
+width:100%;
 }
 
 
@@ -642,6 +647,28 @@ Earring Product Page Styling
   border-radius: 0;
   color:#000000;
   background-color: #ffffff;
+}
+
+.btn-box input{
+  font-size:1rem;
+  padding: 1rem 5.4rem;
+  border-radius: 0;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.button-box{
+  justify-content: center;
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+
+.button-box input{
+  flex: 1;
+  width:10rem;
+  height:4rem;
 }
 
 .cart-btn{

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+    <title>COCOMOLO</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/thankyou.css" rel="stylesheet">
+  
+    
+
+</head>
+
+<body>
+
+  <header>
+    <div class="headertop">
+        <div class="mobile-icon"  onclick="toggleMenu()"><a href="javascript:void"><i class="fa-solid fa-bars"></i></a></div>
+        <div><a href="#">FIND A STORE</a></div>
+        <div><a href="homepage.html">COCOMOLO</a></div>
+        <div>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+    <div class="topbanner">
+        <div class="mobile-icon"><i class=""></i></div>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="bestsellers.html">Best Sellers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+    <!-- <div id="popup">
+      <img src="images/news.png" width="500" height="500" alt="Popup Image">
+      <button id="popup-close">X</button>
+    </div>
+  
+    <script> 
+      // get references to the popup and close button
+      const popup = document.getElementById("popup");
+      const closeButton = document.getElementById("popup-close");
+
+      // add a click event listener to the close button
+      closeButton.addEventListener("click", function() {
+        popup.classList.remove("show");
+      });
+
+      // add a load event listener to the window
+      window.addEventListener("load", function() {
+        // add the "show" class to the popup after 2 seconds (2000 milliseconds)
+        setTimeout(function() {
+          popup.classList.add("show");
+        }, 1000);
+      });
+      /*
+      Source used for pop up:
+        Timed alert box pop up for website? [duplicate]. (2014). Retrieved from https://stackoverflow.com/questions/16836075/timed-alert-box-pop-up-for-website
+        How to - CSS/JS modal. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0
+        How to - Popup. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_popup.asp
+      */
+    </script> -->
+
+    <section class="extra">
+    </section>
+
+
+    <main>
+        <section class="about-introduction">
+          <div class="introduction-background">
+          </div>
+      
+          <div class="introduction-foreground">
+            <img class="logo" src="images/cake.png" alt="Cocomolo logo">
+            <h1> Thank You for<br> your Purchase</h1>
+            <p>
+              We love to see you again!
+            </p>
+          </div>
+        </section>
+    </main>
+
+    <!--Image Grid - Images and Location-->
+    <section class ="about-buttons">
+      <div class="letter-box">
+        <a href="homepage.html"><input  type="submit" class ="button-nav"  value="Back to Home"></a>
+      </div>
+      <div class="button-box">
+        <a href="productlisting.html"><input  type="submit" class ="button-nav"  value="Continue Shopping"></a>
+      </div>
+    </section>
+
+    <!--Button to subscribe to the newletter-->
+    <section class="newsletter">
+      <div class="about-newsletter">
+        <h2>Sign up for our Newsletter!</h2>
+        <div class="newsletter-box">
+          <input type="text" class="customer-email" id="email" placeholder="Enter your email!">
+          <div class="letter-box">
+            <input  type="submit" class ="button-nav"  value="Submit">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+      <div class="row">
+          <div class="col-sm-12 col-md-6">
+          <h6>Cocomolo.com</h6>
+          <p>4151 Hazelbridge Way #2360| Richmond, BC | BC V6X 4J7</p>
+          <p>4700 Kingsway | Burnaby, BC | BC V5H 4M5</p>
+          <p>(778) 881-1986</p>
+          <p class="text-justify">hello@shopcocomolo.com</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="container">
+      <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+              <div class="socialmediaicons">
+                  <a href="https://www.facebook.com/cocomolo.official"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/cocomolo_official/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.pinterest.ca/pin/583145851740484017/"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+              <a href="#">Cocomolo</a>.
+          </p>
+          </div>
+      </div>
+      </div>
+  </footer>
+</body>
