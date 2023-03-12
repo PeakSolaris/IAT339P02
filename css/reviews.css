@@ -54,10 +54,8 @@
 
 .down-arrow{
   display:none;
-  flex:30%;
   max-width:21%;
-  box-sizing:border-box;
-  padding:30px;
+  
 }
 
 .down-arrow a{
@@ -80,6 +78,35 @@
   padding:30px;
 }
 
+
+
+.review-btn{
+  border: 0.25rem solid #84a37e;
+  background-color: white;
+  padding: 0,2rem,2rem,0;
+  
+}
+
+.review-submit{
+
+  margin: auto;
+}
+
+.comment-details{
+  display: flex;
+  margin: auto;
+  
+}
+.review-submit input {
+  
+  padding: 1.5rem;
+}
+
+.comment2 .border{
+  margin-bottom: 3rem;
+}
+
+
 .star{
   color:#df2c4d;
 }
@@ -87,18 +114,31 @@
 @media screen and (max-width:850px){
   .col{
     flex:100%;
-    max-width:80%
+    max-width: 100%;
   }
+
   .arrow{
     display:none;
   }
 
-  .down-arrow{
-    margin-left:3rem;
+  .review-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .down-arrow {
+    margin:0 auto;
     display:block;
   }
 
-  
+  .review-submit input{
+    width: 100%;
+    padding: 0;
+}
+
+.review-submit a{
+  font-size: 5px;
 }
 
 .rating {
@@ -250,23 +290,11 @@ textarea:hover{
   flex-direction: row;
 }
 
-.review-btn{
-  border: 0.25rem solid #84a37e;
-  margin-right:1rem;
+.review-submit input {
+  
+  padding: 1.5rem;
 }
 
-.review-submit input{
-  font-size:rem;
-  padding: 1rem 5rem;
-  border-radius: 0;
-  color:#000000;
-  background-color: #ffffff;
-  height:100%;
-}
-
-.review-btn:hover{
-  border: 0.25rem solid #df2c4d;
-}
 
 .comment-details{
   display:flex;
@@ -278,4 +306,6 @@ textarea:hover{
   font-size:22px;
   font-weight:600;
   margin-top:0rem;
+}
+
 }
