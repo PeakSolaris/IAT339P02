@@ -31,6 +31,10 @@
   max-height: 200px;
 }
 
+.introduction-foreground p{
+  background-color: #80808080;
+}
+
 
 .extra{
   margin:0;
