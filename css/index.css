@@ -3,9 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
-
 .index-box {
  
   margin-left: 1rem;
@@ -49,8 +46,12 @@ html {
   overflow-wrap: break-word;
 }
 
-
-
+<<<<<<< Updated upstream
+.index a:hover {
+=======
+ul{
+  list-style: none;
+}
 
 ul{
 
@@ -68,6 +69,9 @@ ul{
   background-color: #84a37e;
 }
 
+}
+  color: #df2c4d;
+.introduction a:hover {
 
 .column-box{
   width:100%;
@@ -84,7 +88,7 @@ ul{
 
 .index-left {
   
-  width: 30%; 
+  width: 15%; 
   margin-left: 3rem;
   display: flex;
   
