@@ -17,7 +17,7 @@ html {
 
 .index-box h2{
   font-weight:bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .index h1 {
@@ -67,9 +67,11 @@ html {
 }
 
 .index-left {
+  
   width: 30%; 
+  margin-left: 3rem;
   display: flex;
-  margin: 1rem auto;
+  
   margin-top: 0rem;
   flex-direction: column;
   position: fixed;
@@ -222,7 +224,9 @@ html {
 }
 
 .cartimg img{
-  width: 50%;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 90%;
   height: 40%;
 }
 
@@ -295,8 +299,14 @@ html {
   }
   .cartimg img{
     width: 100%;
+   
+    margin: auto;
   }
   .crd_hdng h5{
     font-size: 10px;
+  }
+
+  .citations-right{
+    margin-left:5% ;
   }
 }
