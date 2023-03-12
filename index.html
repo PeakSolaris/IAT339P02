@@ -1,398 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P01 - Style Guide Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+  <title>COCOMOLO - Style Guide</title>
 
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/homepage.css" rel="stylesheet">
+  <link href="css/citations.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <h1>P01 - Style Guide Template</h1>
+  <header>
+    <div class="headertop">
+        <div class="mobile-icon"  onclick="toggleMenu()"><a href="javascript:void"><i class="fa-solid fa-bars"></i></a></div>
+        <div><a href="#">FIND A STORE</a></div>
+        <div><a href="homepage.html">COCOMOLO</a></div>
+        <div>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
 
-      <p>A template you can use to start building out your own style guides with.</p>
+    <div class="topbanner">
+        <div class="mobile-icon"><i class=""></i></div>
+        <nav>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="productlist.html">Products</a></li>
+            <li><a href="bestsellers.html">Best Sellers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </nav>
+    </div>
+  </header>
 
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="productlist.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#citations">Citations</a>
-      </nav>
+  <section class="index">
+    <h1 class="title">Style Guide</h1>
+    <div class="index-box">
+      <div class="index-left">
+        <h2>Basic Styles</h2>
+        <a href="#ideas">Branding Ideas</a>
+        <a href="#colours">Colour Palette</a>
+        <a href="#fonts">Typefaces</a>
 
-      <div class="topbanner"> 
-        <div class="logo"><a class="active" href="index.html">COCOMOLO</a></div>
-        <ul>    
-          <li><a href="productlist.html">Products</a></li>
-          <li><a href="bestsellers.html" >Best Sellers</a></li>
-          <li><a href="#" >Favourites</a></li>
-          <li><a href="checkout.html" >Cart</a></li>
-          <li><a href="contactus.html" >Contact Us</a></li>
-        </ul>
+        <h2>Code Structure</h2>
+        <a href="#items">Interactive Items</a>
+        <a href="#texts">Text Elements</a>
+        <a href="#elements">Combined Elements</a>
       </div>
 
-    </header>
+      <div class="citations-right">
+        <h2 id="ideas">Branding Ideas</h2>
+        <div class="border"></div>
+        <div class="coding">
+          <p>Cocomolo is a company that offers a wide range of accessories and jewelry, primarily targeted towards women but available for anyone to purchase. Our offerings include hair accessories, headwear, bags, and handmade jewelry that cater to a range of styles, including trendy, retro, and fun. Our products are designed to appeal to individuals who enjoy accessorizing with items such as rings, hair clips, and bags, and who are interested in fashion trends. Our handmade products showcase originality and authenticity, and our company is also committed to sustainability.</p>
+          &ensp;• &ensp;Potential imagery & moodboard: Please visit <a href="https://www.figma.com/file/yPF85XCZKpze7hZgN5Jj9K/Untitled?node-id=0%3A1&t=aDE1mGf9LbNlBvxu-1">here</a>.
+        </div>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+        <h2 id="colours">Colour Palette</h2>
+        <div class="border"></div>
+        <div class = "image-container">
+          <div class="column">
+            <div class="colour-box" id="black"></div>
+            <p>#000000 – Black</p>
+            <p>&ensp;• &ensp;used for the main headings and paragraphs.</p>
+          </div>
 
+          <div class="column">
+            <div class="colour-box" id="red"></div>
+            <p>#df2c4d – Cherry Red </p>
+            <p>&ensp;• &ensp;used to highlight the item that is being hovered over.</p>
+          </div>
 
-      <section class="element">
-        <h3>In-text link</h3>
-        <h4>CSS selector:</h4>
-        <p>.in-text-link</p>
+          <div class="column">
+            <div class="colour-box" id="green"></div>
+            <p>#84a37e – Muted Green </p>
+            <p>&ensp;• &ensp;used for the header background and buttons.</p>
+          </div>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;Click here to visit our website!&lt;/a&gt;</code>
+          <div class="column">
+            <div class="colour-box" id="white"></div>
+            <p>#ffffff – White</p>
+            &ensp;• &ensp;used for the background of the page because it provides brightness and adds vibrancy to the design.
+          </div>
+          <p>The muted green and the white will induce a welcoming atmosphere. The red will give a pop of colour and can add a retro-style feel to the website.</p>
+        </div>
 
-        <h4>Rendered element:</h4>
-        <a href="#" class ="in-text-link">Click here to visit our website!</a>
+        <h2 id="fonts">Typefaces</h2>
+        <div class="border"></div>
+        <div class="font">
+          <p>&ensp;• &ensp;The main font is Lato by Łukasz Dziedzic. Lato not only exudes a friendly and inviting aura, but also conveys a sense of professionalism.</p>
+          <p>&ensp;• &ensp;Poppins is also used by Indian Type Foundy because it evokes a calm mood and the appearance isn't too overwhelming for the user.</p>
+        </div>
 
-      </section>
+        <h2 id="items">Interactive Items</h2>
+        <div class="border"></div>
+        <section class="element">
+          <h3>In-text link</h3>
+          <h4>CSS selector:</h4>
+          <p>.in-text-link</p>
 
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;Click here to visit our website!&lt;/a&gt;</code>
 
-      <!-- Default Button styling section -->
-      <section class="element">
+          <h4>Rendered element:</h4>
+          <a href="#" class ="in-text-link">Click here to visit our website!</a>
 
-        <h3>Navigation Link</h3>
+        </section>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <div class="line"></div>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <section class="element">
 
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+          <h3>Navigation Link</h3>
 
-      </section>
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
 
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;input type="submit" value="Submit"&gt;</code>
-        <code>&lt;input type="reset" value="reset"&gt;</code>
-        <h4>Rendered element:</h4>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-      </section>
+          <h4>Rendered element:</h4>
+          <div class="nav-example">
+            <nav>
+              <li><a href="#">Default button</a></li>
+            </nav>
+          </div>
 
+        </section>
 
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-        <h4>CSS selector:</h4>
-        <p>input</p>
-        <h4>Sample code:</h4>
-        <code>&lt;label for="fname">First name:&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
-        <h4>Rendered element:</h4>
-        <form>
-          <fieldset class="personal-info">
-          <label for="fname">First name:</label>
-          <input type="text" id="fname" name="fname"><br><br>
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="lname"><br><br>
-        </fieldset>
-        </form>
-      </section>
+        <div class="line"></div>
 
-<!-- knowledge here is from w3cschool website -->
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;input type="radio" id="small" name="cloth_size" value="SMALL"&gt;</code>
-        <code>&lt;label for="small">SMALL&lt;/label&gt;</code>
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3>
+          <h4>CSS selector:</h4>
+          <p></p>
+          <h4>Sample code:</h4>
+          <code>&lt;input type="submit" value="Submit"&gt;</code>
+          <code>&lt;input type="reset" value="reset"&gt;</code>
+          <h4>Rendered element:</h4>
+          <div class="btn-box">
+            <input  class = "cart-btn" type="submit" value="Submit">
+          </div>
+          <br>
+          <div class="btn-box">
+            <input  class = "cart-btn" type="submit" value="Reset">
+          </div>
+        </section>
+
+        <div class="line"></div>
         
-        <h4>Rendered element:</h4>
-<form >
-  <input type="radio" id="small" name="cloth_size" value="SMALL">
-  <label for="small">SMALL</label><br>
-  <input type="radio" id="medium" name="cloth_size" value="MEDIUM">
-  <label for="medium">MEDIUM</label><br>
-  <input type="radio" id="large" name="cloth_size" value="LARGE">
-  <label for="large">LARGE</label><br><br>
-</form>
-      </section>
- <!-- knowledge here is from w3cschool website -->
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+          <h4>CSS selector:</h4>
+          <p>input</p>
+          <h4>Sample code:</h4>
+          <code>&lt;label for="fname">First name:&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="fname" name="fname"&gt;</code>
+          <h4>Rendered element:</h4>
+          <form>
+            <fieldset class="personal-info">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+          </fieldset>
+          </form>
+        </section>
 
-      <section class="element">
-        <h3>Image as a Link</h3>
-        <h4>CSS selector:</h4>
-        <p>.linked-img</p>
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#"&gt;&lt;img src="#" alt="exmaple"&gt;</code>
+        <div class="line"></div>
 
-        <h4>Rendered element:</h4>
-        <p>The image below is a link. Try to click on it.</p>
-
-        <a href="#"><img src="imgs/img1.png" width="320" height="350" alt="Uniqlo example" class="linked-img"></a>
-      </section>
-<!-- image here is from uniqlo.com/ca website -->
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <section class="element">
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
-        <h4>Rendered element:</h4>
-        <h3>Headings</h3>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-      </section>
-
-      <section class="element">
-        <h3>Paragraphs</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
-        <h4>Rendered element:</h4>
-        <p>This is a paragraph.</p>
-      </section>
-
-      <section class="element">
-        <h3>Numbered Lists</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;li&gt;small&lt;/li&gt;</code>
-        <h4>Rendered element:</h4>
-        <ol>
-          <li>small</li>
-          <li>medium</li>
-          <li>large</li>
-        </ol>  
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-
-      
-      <h2>Combined Elements</h2>
-
-      <section class="element">
-        <h3>Basic layout showing</h3>
-        <h3>Main Navigation</h3>
-        <h4>Rendered element:</h4>
-        <nav>    
-          <a class="button-nav" href="#">Baby</a>
-          <a class="button-nav" href="#">Kids</a>
-          <a class="button-nav" href="#">Man</a>
-          <a class="button-nav" href="#">Woman</a>
-          </nav>
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+          <h4>CSS selector:</h4>
+          <p></p>
+          <h4>Sample code:</h4>
+          <code>&lt;input type="radio" id="small" name="cloth_size" value="SMALL"&gt;</code>
+          <code>&lt;label for="small">SMALL&lt;/label&gt;</code>
+          
+          <h4>Rendered element:</h4>
+          <form >
+            <input type="radio" id="small" name="cloth_size" value="SMALL">
+            <label for="small">SMALL</label><br>
+            <input type="radio" id="medium" name="cloth_size" value="MEDIUM">
+            <label for="medium">MEDIUM</label><br>
+            <input type="radio" id="large" name="cloth_size" value="LARGE">
+            <label for="large">LARGE</label><br><br>
+          </form>
+        </section>
         
-      </section>
+        <div class="line"></div>
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;div class="prodctimg"&gt;&lt;img src="img1.png" alt="img1"&gt;&lt;/div&gt;</code>
-        <code>&lt;div class="prodctname"&gt;&lt;p&gt;Golden T-shirt&lt;/p&gt;&lt;/div&gt;</code>
-        <h4>Rendered element:</h4>
-        <div class="card_desing_prduct">
-            <div class="itemCard">
-                <a class="in-text-link" href="#">
-                    <div class="crd_img">
-                        <img class="itemimg" src="images/earring.jpg" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <h5>Jewelry</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="itemCard">
-                <a class="in-text-link" href="#">
-                    <div class="crd_img">
-                        <img class="itemimg" src="images/scrunchies.jpg" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <h5>Hair Wear</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="itemCard">
-              <a class="in-text-link" href="#">
-                  <div class="crd_img">
-                      <img class="itemimg" src="images/charm.jpg" alt="">
-                  </div>
-                  <div class="crd_hdng">
-                      <h5>Phone Accessories</h5>
-                  </div>
-              </a>
-          </div>
-        </div>
-        <!--
-          Heart earring image source:
-          Cocomolo. (2020). –In Richmond, British Columbia. Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./919212008544539/?type=3
+        <!-- knowledge here is from w3cschool website -->
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <h4>CSS selector:</h4>
+          <p>.linked-img</p>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img src="#" alt="exmaple"&gt;</code>
 
-          Scrunchies image source:
-          Cocomolo. (2020). Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./984154768716929/?type=3
+          <h4>Rendered element:</h4>
+          <p>The image below is a link. Try to click on it.</p>
 
-          Phone charm image source:
-          Cocomolo. (2021). –at Metropolis at Metrotown. Retrieved from https://www.facebook.com/photo/?fbid=1224087978056939&set=pcb.1224088044723599
-        -->
+          <a href="#"><img src="imgs/img1.png" width="320" height="350" alt="Uniqlo example" class="linked-img"></a>
+        </section>
 
-      </section>
-      <br>
-      <br>
-      <br>
-      <section class="element">
-        <br>
-        <br><br><br>
-        <br>
-        <h3>Payment Form</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;label for="cname"&gt;Name on Card&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="email" name="email"&gt;</code>
-        <h4>Rendered element:</h4>
-        <div class="paymentform">
-          <div class="billingaddress">
-          <div class="paymenttitle">Billing Address</div>
-          <div class="paymentinfo"> Full Name</div>
-          <input type="text" class="paymentinfoinput" id="frname" name="fullname" placeholder="Jean Doe">
-          <div class="paymentinfo"> Email</div>
-          <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
-          <div class="paymentinfo"> Address</div>
-          <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
-          <div class="paymentinfo"> City</div>
-          <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
-        </div>
-        <div class="payment">
-          <div class="paymenttitle">Payment</div>
-          <div class="paymentinfo">Name on Card</div>
-          <input type="text" class="paymentinfoinput" id="cname" name="cardname">
-          <div class="paymentinfo">Credit card number</div>
-          <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
-          <div class="paymentinfo">Exp Date</div>
-          <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
-          <div class="paymentinfo">CVV</div>
-          <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
-        </div>
-        </div>
-      </section>
-      
-      <section class="element">
-        <h3>Checkout Cart</h3>
-        <h4>CSS selector:</h4>
-        <p></p>
-        <h4>Sample code:</h4>
-        <code>&lt;div class="cartprodctName"&gt;Golden T-shirt&lt;/div&gt;</code>
-        <code>&lt;div class="cartprodctPrice"&gt;$20&lt;/div&gt;</code>
-        <h4>Rendered element:</h4>
-        <div class="shoppingCart">
-          <div class="cartimg"><img src="images/earring.jpg" width="500" height="550" alt="prodctimg"></div>
-          <div class="bag-total">
-            <div class="itemtitle">
-              <p class="itemname">Heart Dangle Earrings</p>
-              <h3 class="subtitle">pink and green</h3>
-            </div>
-            <div class="subtotal">
-              <p class="small">Subtotal:</p>
-              <p class="small">$13.00</p>
-            </div>
-            <div class="delivery">
-              <p class="small">Delivery (Standard - 2 working days):<br>
-                <a href="#" class="change-delivery">Change delivery method</a>
-              </p>
-              <p class="delivery-price">Free</p>
-            </div>
-            <div class="total">
-              <h3>Total:</h3>
-              <h3>$13.00</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+        <section id="text_elements">
+          <h2 id="texts">Text Elements </h2>
+          <div class="border"></div>
+  
+          <section class="element">
+            <h3>Headings</h3>
+            <h4>CSS selector:</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
+            <h4>Rendered element:</h4>
+            <h3>Headings</h3>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </section>
 
-    <section id="brandingIdeas">
-      <h2>Basic branding ideas</h2>
-          <p>Cocomolo is a company that offers a wide range of accessories and jewelry, primarily targeted towards women but available for anyone to purchase.
-            Our offerings include hair accessories, headwear, bags, and handmade jewelry that cater to a range of styles, including trendy, retro, and fun.
-            Our products are designed to appeal to individuals who enjoy accessorizing with items such as rings, hair clips, and bags, and who are interested in fashion trends.
-            Our handmade products showcase originality and authenticity, and our company is also committed to sustainability.
-            <br>
-            &ensp;• &ensp;Potential imagery & moodboard: Please visit <a href="https://www.figma.com/file/yPF85XCZKpze7hZgN5Jj9K/Untitled?node-id=0%3A1&t=aDE1mGf9LbNlBvxu-1">here</a>.
-          </p>
+          <div class="line"></div>
 
-          <div class="colorscheme"><p>
-            <strong>Color Palettes:</strong></p>
-            <div id="blackbox"></div><p>&ensp;#000000 – Black</p>
-            <p>&ensp;• &ensp;The black colour will be used for the main headings and paragraphs. For instance, it will be used for product descriptions and text in the main navigation.</p>
-            <div id="redbox"></div><p>&ensp;#df2c4d – Cherry Red</p>
-            <p>&ensp;• &ensp;The cherry red colour will be used to highlight the item that is being hovered over.</p>
-            <div id="greenbox"></div><p>&ensp;#84a37e – Muted Green</p>
-            <p>&ensp;• &ensp;The muted green is used for the header background.
-            <div id="whitebox"></div><p>&ensp;#ffffff – White</p>
-            <p>&ensp;• &ensp;The white will be used for the background of the page because it provides brightness and adds vibrancy to the design.</p>
-            <p>The muted green and the white will induce a welcoming atmosphere. The red will give a pop of colour and can add a retro-style feel to the website.</p>
+          <section class="element">
+            <h3>Paragraphs</h3>
+            <h4>CSS selector:</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+            <h4>Rendered element:</h4>
+            <p>This is a paragraph.</p>
+          </section>
+  
+          <div class="line"></div>
+
+          <section class="element">
+            <h3>Numbered Lists</h3>
+            <h4>CSS selector:</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;li&gt;small&lt;/li&gt;</code>
+            <h4>Rendered element:</h4>
+            <ol>
+              <li>small</li>
+              <li>medium</li>
+              <li>large</li>
+            </ol>  
+          </section>
+          <!-- COMBINED ELEMENTS SECTION // -->
+          <section id="combined_elements">    
+            <h2 id="elements">Combined Elements</h2>
+            <div class="border"></div>
+    
+            <section class="element">
+              <h3>Basic layout showing</h3>
+              <h3>Main Navigation</h3>
+              <h4>Rendered element:</h4>
+              <div class="nav-example">
+                <nav>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="productlist.html">Products</a></li>
+                    <li><a href="bestsellers.html">Best Sellers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </nav>
+              </div>
+              
+            </section>
+
+            <div class="line"></div>
+    
+            <section class="element">
+              <h3>Product/Service Listing</h3>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+              <code>&lt;div class="prodctimg"&gt;&lt;img src="img1.png" alt="img1"&gt;&lt;/div&gt;</code>
+              <code>&lt;div class="prodctname"&gt;&lt;p&gt;Golden T-shirt&lt;/p&gt;&lt;/div&gt;</code>
+              <h4>Rendered element:</h4>
+              <div class="card_desing_prduct">
+                <div class="itemCard">
+                    <a class="in-text-link" href="jewelry.html">
+                        <div class="crd_img">
+                            <img class="itemimg" src="images/earring.jpg" alt="">
+                        </div>
+                        <div class="crd_hdng">
+                            <h5>Jewelry</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemCard">
+                    <a class="in-text-link" href="hair.html">
+                        <div class="crd_img">
+                            <img class="itemimg" src="images/scrunchies.jpg" alt="">
+                        </div>
+                        <div class="crd_hdng">
+                            <h5>Hair Accessories</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="itemCard">
+                    <a class="in-text-link" href="phone.html">
+                        <div class="crd_img">
+                            <img class="itemimg" src="images/charm.jpg" alt="">
+                        </div>
+                        <div class="crd_hdng">
+                            <h5>Phone Accessories</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            </section>
+
+            <div class="line"></div>
+    
+            <section class="element">
+              <h3>Payment Form</h3>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+              <code>&lt;label for="cname"&gt;Name on Card&lt;/label&gt;</code>
+              <code>&lt;input type="text" id="email" name="email"&gt;</code>
+              <h4>Rendered element:</h4>
+              <div class="paymentform">
+                <div class="billingaddress">
+                <div class="paymenttitle">Billing Address</div>
+                <div class="paymentinfo"> Full Name</div>
+                <input type="text" class="paymentinfoinput" id="frname" name="fullname" placeholder="Jean Doe">
+                <div class="paymentinfo"> Email</div>
+                <input type="text" class="paymentinfoinput" id="email" name="email" placeholder="xxxx@gmail.com">
+                <div class="paymentinfo"> Address</div>
+                <input type="text" class="paymentinfoinput" id="adr" name="address" placeholder="0001 Seymoure Street">
+                <div class="paymentinfo"> City</div>
+                <input type="text" class="paymentinfoinput" id="city" name="city" placeholder="Burnaby">
+              </div>
+              <div class="payment">
+                <div class="paymenttitle">Payment</div>
+                <div class="paymentinfo">Name on Card</div>
+                <input type="text" class="paymentinfoinput" id="cname" name="cardname">
+                <div class="paymentinfo">Credit card number</div>
+                <input type="number" class="paymentinfoinput" id="ccnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <div class="paymentinfo">Exp Date</div>
+                <input type="number" class="paymentinfoinput" id="expdate" name="expdate" placeholder="01/23">
+                <div class="paymentinfo">CVV</div>
+                <input type="number" class="paymentinfoinput" id="cvv" name="cvv" placeholder="123">
+              </div>
+              </div>
+            </section>
+
+            <div class="line"></div>
             
-            <p><strong>Fonts: LATO & POPPINS</strong></p>
-          </div>
-          <p>&ensp;• &ensp;The main font used for the website will be Lato by Łukasz Dziedzic. Lato not only exudes a friendly and inviting aura, but also conveys a sense of professionalism.</p>
-          <p>&ensp;• &ensp;I also use Poppins by Indian Type Foundy because it evokes a calm mood and the appearance isn't too overwhelming for the user.</p>
-          <!--
-            Source used for colour demo box:
-            Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from https://www.thesitewizard.com/css/create-coloured-box.shtml
-
-            Source used for spacing in paragraphs:
-            3 ways to add HTML space between words on same line. (n.d.). Retrieved from https://wonderdevelop.com/html-space-between-words-on-same-line/
+            <section class="element">
+              <h3>Checkout Cart</h3>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+              <code>&lt;div class="cartprodctName"&gt;Golden T-shirt&lt;/div&gt;</code>
+              <code>&lt;div class="cartprodctPrice"&gt;$20&lt;/div&gt;</code>
+              <h4>Rendered element:</h4>
+              <div class="shoppingCart">
+                <div class="cartimg"><img src="images/earring.jpg" alt="prodctimg"></div>
+                <div class="bag-total">
+                  <div class="itemtitle">
+                    <p class="itemname">Heart Dangle Earrings</p>
+                    <h3 class="subtitle">pink</h3>
+                  </div>
+                  <div class="subtotal">
+                    <p class="small">Subtotal:</p>
+                    <p class="small">$13.00</p>
+                  </div>
+                  <div class="delivery">
+                    <p class="small">Delivery (Standard - 2 working days):<br>
+                      <a href="#" class="change-delivery">Change delivery method</a>
+                    </p>
+                    <p class="delivery-price">Free</p>
+                  </div>
+                  <div class="total">
+                    <h3>Total:</h3>
+                    <h3>$13.00</h3>
+                  </div>
+                </div>
+              </div>
+            </section>
             
-            Font sources:
-            Dziedzic, Łukasz. (2010). Lato [Font]. Retrieved from https://fonts.google.com/specimen/Lato
-            Indian Type Foundy. (2014). Poppins [Font]. Retrieved from https://fonts.google.com/specimen/Poppins
-          -->
-         
-    </section>
+            </section>
+          <!-- // COMBINED ELEMENTS SECTION -->
+        </section>
 
-    <section id="citations">
-      <h2>Citations</h2>
 
-      <p>
-        Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-        Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.
+      </div>
+    </div>
+  </section>
 
-        knowledge of creating payform css and the style of productlist is Retrieved from <a href="https://www.w3schools.com/html/">w3cschool</a>.
-      </p>
+  
+  <div class="container2">
+    <footer class="site-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+            <h6>Cocomolo.com</h6>
+            <p>4151 Hazelbridge Way #2360| Richmond, BC | BC V6X 4J7</p>
+            <p>4700 Kingsway | Burnaby, BC | BC V5H 4M5</p>
+            <p>(778) 881-1986</p>
+            <p class="text-justify">hello@shopcocomolo.com</p>
+            </div>
+        </div>
+        </div>
 
-    </section>
-
-  </body>
-</html>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <div class="socialmediaicons">
+                    <a href="https://www.facebook.com/cocomolo.official"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cocomolo_official/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.ca/pin/583145851740484017/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+                <a href="#">Cocomolo</a>.
+            </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</div>
+</body>
