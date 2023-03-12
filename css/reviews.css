@@ -144,7 +144,8 @@
 
 /* Comment Section ----------------*/
 .stars{
-  width:400px;
+  width:100%;
+  margin-left: 0;
   padding:20px 30px;
   display:flex;
   align-items: center;
@@ -242,6 +243,7 @@ textarea:hover{
   margin-bottom:0.5rem ;
 }
 .review-submit{
+  justify-content: center;
   margin-top: 1rem;
   display:flex;
   flex-wrap:wrap;

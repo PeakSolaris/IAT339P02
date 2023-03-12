@@ -28,16 +28,6 @@
   padding: 2rem;
     width: 50%;
   }
-<<<<<<< HEAD
-  
-  .left{
-    display: flex;
-    flex-direction: column;
-    width:50%;
-    /* box-sizing:border-box; */
-    
-  }
-=======
 .left{
   display: flex;
   flex-direction: column;
@@ -66,19 +56,29 @@
 
 
 @media screen and (max-width:850px) {
-    .flex-box{
-        display: flex;
-        flex-direction: column;  
-    }
+  .flex-box{
+      display: flex;
+      flex-direction: column;
+  }
 
-    .left{
+  .left{
     width: 100%;
     margin-bottom: 2rem;
     padding: 1rem;
-    }
+  }
 
-    .right{
+  .right{
     width: 100%;
     padding: 1rem;
-    }    
+  }
+
+  .charm{
+    margin-top: 0rem;
+  }
+  
+  .hat{
+    margin-top: 0rem;
+  }
+
+    
 }
