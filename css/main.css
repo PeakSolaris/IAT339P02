@@ -512,6 +512,11 @@ input[type=checkbox]{
   border-bottom:  1px solid #333;
   width: 50vw;
 }
+
+.delivery a{
+  color:#84a37e;
+}
+
 .total{
   margin-top: 6rem;
   width: 40%;
