@@ -40,6 +40,36 @@
         </div>
     </header>
 
+    div id="popup">
+      <img src="images/news.png" width="500" height="500" alt="Popup Image">
+      <button id="popup-close">X</button>
+    </div>
+  
+    <script> 
+      // get references to the popup and close button
+      const popup = document.getElementById("popup");
+      const closeButton = document.getElementById("popup-close");
+
+      // add a click event listener to the close button
+      closeButton.addEventListener("click", function() {
+        popup.classList.remove("show");
+      });
+
+      // add a load event listener to the window
+      window.addEventListener("load", function() {
+        // add the "show" class to the popup after 2 seconds (2000 milliseconds)
+        setTimeout(function() {
+          popup.classList.add("show");
+        }, 1000);
+      });
+      /*
+      Source used for pop up:
+        Timed alert box pop up for website? [duplicate]. (2014). Retrieved from https://stackoverflow.com/questions/16836075/timed-alert-box-pop-up-for-website
+        How to - CSS/JS modal. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0
+        How to - Popup. (n.d.). Retrieved from https://www.w3schools.com/howto/howto_js_popup.asp
+      */
+    </script>
+
 
     <main>
         <section class="Hero-section">
